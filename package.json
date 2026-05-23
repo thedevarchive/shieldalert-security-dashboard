@@ -1,5 +1,5 @@
 {
-  "name": "shieldalert",
+  "name": "shieldalert-security-dashboard",
   "type": "module",
   "private": true,
   "scripts": {
