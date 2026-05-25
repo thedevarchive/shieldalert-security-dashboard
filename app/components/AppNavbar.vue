@@ -14,7 +14,7 @@ import { ShieldCog } from '@lucide/vue';
         </div>
       </NuxtLink>
 
-      <div class="flex gap-4 text-sm text-slate-300">
+      <div class="flex gap-4 text-md text-slate-300">
         <NuxtLink to="/password-checker" class="hover:text-white">Password Checker</NuxtLink>
         <NuxtLink to="/phishing-quiz" class="hover:text-white">Phishing Quiz</NuxtLink>
         <NuxtLink to="/suspicious-link" class="hover:text-white">Link Checklist</NuxtLink>
