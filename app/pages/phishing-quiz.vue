@@ -257,7 +257,7 @@ If you see a transaction you don't recognise:
 Don't see Something not right? Simply tap Support and Message Us.`,
     correctAnswer: 'safe',
     explanation:
-      'This looks like a normal banking email informing the client of what to do when they see suspicious transactions on their card.',
+      'This looks like a normal banking email informing the client of what to do when they see suspicious transactions on their account.',
     redFlags: ['No major red flags'],
   },
   {
