@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TipCard from '~/components/TipCard.vue'
 import { BadgeAlert, CreditCard, Fish, FishingHook, Glasses, HandCoins, Info, Lightbulb, Link2, LockKeyholeOpen, MailQuestionMark, MailWarning, PhoneMissed, RectangleEllipsis, RotateCcwKey, ScreenShareOff, Shredder, Toilet, UserLock, VenetianMask } from '@lucide/vue';
 
 const generalTips = [
@@ -72,7 +73,7 @@ const randomTips = [
     icon: LockKeyholeOpen
   },
   {
-    title: 'Verify your emails',
+    title: 'What is phishing?',
     description: 'Phishing is a cybercrime where attackers pretend to be a legitimate organisation through their emails in the hopes of unsuspecting victims disclosing their credentials to the attacker.',
     icon: Fish
   },
@@ -113,9 +114,18 @@ const randomTips = [
   },
 ]
 
-const randomTip = ref(
-  randomTips[Math.floor(Math.random() * randomTips.length)]
-)
+const randomTip = ref<(typeof randomTips)[number] | null>(null)
+
+// onMounted function ensures that icon is rendered properly
+onMounted(() => {
+  const index = Math.floor(Math.random() * randomTips.length)
+
+  const selectedTip = randomTips[index]
+
+  if (!selectedTip) return
+
+  randomTip.value = selectedTip
+})
 </script>
 
 <template>
@@ -178,7 +188,7 @@ const randomTip = ref(
         </h2>
       </div>
 
-      <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+      <!-- <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
         <div class="flex">
           <component :is="randomTip?.icon" class="mb-4 text-cyan-400 mr-2" :size="25" />
           <p class="mb-2 text-lg font-semibold text-cyan-400">
@@ -189,6 +199,9 @@ const randomTip = ref(
         <p class="text-sm text-slate-300">
           {{ randomTip?.description }}
         </p>
+      </div> -->
+      <div v-if="randomTip">
+        <TipCard :title="randomTip.title" :description="[randomTip.description]" :icon="randomTip.icon" />
       </div>
     </section>
   </main>

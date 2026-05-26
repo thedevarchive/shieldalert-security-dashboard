@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Eye, EyeOff } from '@lucide/vue'
+import { Eye, EyeOff, Lightbulb } from '@lucide/vue'
 
 const password = ref('')
 const showPassword = ref(false)
