@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Eye, EyeOff, Lightbulb } from '@lucide/vue'
+import TipCard from '~/components/TipCard.vue'
 
 const password = ref('')
 const showPassword = ref(false)
@@ -173,15 +174,9 @@ const crackTimeLabel = computed(() => {
         </p>
       </div>
 
-      <div class="mt-6 rounded-xl border border-slate-800 bg-slate-950 p-4">
-        <p class="text-sm font-medium text-slate-200">
-          Tip
-        </p>
-        <p class="mt-1 text-sm text-slate-400">
-          Avoid using names, birthdays, pets, favourite teams or anything someone
-          could guess from your social media.
-        </p>
-      </div>
+      <TipCard
+        :description="['Avoid using names, birthdays, pets, favourite teams or anything someone could guess from your social media.']"
+        :is-dark="true" />
     </section>
   </main>
 </template>
