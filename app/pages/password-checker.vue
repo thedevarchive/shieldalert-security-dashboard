@@ -112,7 +112,7 @@ const crackTimeLabel = computed(() => {
       </h1>
 
       <p class="text-slate-300">
-        Test how strong a password is based on length, variety, and guessability.
+        Test how strong a password is based on length, variety and guessability.
       </p>
     </section>
 
@@ -174,9 +174,11 @@ const crackTimeLabel = computed(() => {
         </p>
       </div>
 
-      <TipCard
-        :description="['Avoid using names, birthdays, pets, favourite teams or anything someone could guess from your social media.']"
-        :is-dark="true" />
+      <div class="mt-6">
+        <TipCard
+          :description="['Avoid using names, birthdays, pets, favourite teams or anything someone could guess from your social media.']"
+          :is-dark="true" />
+      </div>
     </section>
   </main>
 </template>

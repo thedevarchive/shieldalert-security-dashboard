@@ -17,7 +17,7 @@ defineProps<{
 </script>
 
 <template>
-    <div class="rounded-2xl border border-slate-800 p-6 mt-6"
+    <div class="rounded-2xl border border-slate-800 p-6"
         :class="isDark ? 'bg-slate-950' : 'bg-slate-900'">
         <div class="flex">
             <component :is="icon" class="mb-4 mr-2 text-cyan-400" :size="25" />
@@ -27,7 +27,7 @@ defineProps<{
             </p>
         </div>
 
-        <p class="text-sm text-slate-300" v-for="(item, index) in description" :key="index">
+        <p class="mt-1 text-sm text-slate-300" v-for="(item, index) in description" :key="index">
             {{ item }}
         </p>
     </div>

@@ -34,10 +34,10 @@
 
       <ul class="mt-6 space-y-3">
         <li v-for="check in checks" :key="check.label" class="flex items-center gap-3 text-sm">
-          <span class="flex h-5 w-5 items-center justify-center rounded-full text-xs" :class="check.failed
+          <span class="flex h-5 w-5 items-center justify-center rounded-full text-xs" :class="!link ? 'bg-gray-500' : (check.failed
             ? 'bg-red-500 text-white'
-            : 'bg-emerald-500 text-white'">
-            {{ check.failed ? '!' : '✓' }}
+            : 'bg-emerald-500 text-white')">
+            {{ !link ? '-' : ( check.failed ? '!' : '✓' ) }}
           </span>
 
           <span :class="check.failed
@@ -47,28 +47,17 @@
           </span>
         </li>
       </ul>
-
-      <div class="mt-6 rounded-xl border border-slate-800 bg-slate-950 p-4">
-        <p class="text-sm font-medium text-slate-200">
-          Reminder
-        </p>
-
-        <p class="mt-1 text-sm text-slate-400">
-          A link can still be malicious even if it looks normal.
-        </p>
-
-        <p class="mt-1 text-sm text-slate-400">
-          A link can also be normal even if it is suspicious.
-        </p>
-
-        <p class="mt-1 text-sm text-slate-400">
-          Always verify unexpected login pages, invoices, downloads or urgent requests.
-        </p>
-
-        <p class="mt-1 text-sm text-slate-400">
-          As this is only a simple link checker, you may need to verify the context and sender to ensure the link is not
-          suspicious.
-        </p>
+        
+      <div class="mt-6">
+        <TipCard
+          :title="'Reminders'"
+          :description="[
+            '• A link can still be malicious even if it looks normal.',
+            '• A link can also be normal even if it is suspicious.', 
+            '• Always verify unexpected login pages, invoices, downloads or urgent requests.',
+            '• As this is only a simple link checker, you may need to verify the context and sender to ensure the link is not suspicious.'
+            ]"
+          :is-dark="true" />
       </div>
     </section>
   </main>
@@ -120,7 +109,7 @@ const riskScore = computed(() => {
 
 const riskLabel = computed(() => {
   if (!link.value) return 'Not tested'
-  if (riskScore.value < 25) return 'No obvious red flags'
+  if (riskScore.value < 25) return 'Little to no red flags'
   if (riskScore.value < 50) return 'Some red flags'
   if (riskScore.value < 75) return 'Many red flags detected'
   return 'Very suspicious'
