@@ -45,14 +45,14 @@
       <div class="mt-6">
         <TipCard :title="'Important'"
           :description="['If your banking details, identity documents or workplace credentials were exposed, contact the relevant organisation immediately.']"
-          :icon="CircleAlert" />
+          :icon="TriangleAlert" />
       </div>
     </section>
   </main>
 </template>
 
 <script setup lang="ts">
-import { CircleAlert } from '@lucide/vue'
+import { CircleAlert, TriangleAlert } from '@lucide/vue'
 
 type ChecklistItem = {
   title: string
