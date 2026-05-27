@@ -42,21 +42,18 @@
         </div>
       </div>
 
-      <div class="mt-6 rounded-xl border border-yellow-500 bg-yellow-950/30 p-4">
-        <p class="text-sm font-medium text-yellow-300">
-          Important
-        </p>
-
-        <p class="mt-1 text-sm text-slate-300">
-          If your banking details, identity documents or workplace credentials
-          were exposed, contact the relevant organisation immediately.
-        </p>
+      <div class="mt-6">
+        <TipCard :title="'Important'"
+          :description="['If your banking details, identity documents or workplace credentials were exposed, contact the relevant organisation immediately.']"
+          :icon="CircleAlert" />
       </div>
     </section>
   </main>
 </template>
 
 <script setup lang="ts">
+import { CircleAlert } from '@lucide/vue'
+
 type ChecklistItem = {
   title: string
   description: string
