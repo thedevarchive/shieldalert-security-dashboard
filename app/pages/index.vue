@@ -88,29 +88,9 @@ const randomTips = [
     icon: CreditCard
   },
   {
-    title: 'Just wait a moment',
-    description: 'Just wait a moment, just wait a moment, just wait a moment sir.',
-    icon: Glasses
-  },
-  {
-    title: 'MyCoin is for scammers',
-    description: 'Bad and naughty scammers get sent to the ENDLESS MAZE to atone for their crimes.',
-    icon: HandCoins
-  },
-  {
-    title: 'This is the payback',
-    description: 'You can\'t run away, it\'s too late. I\'m not afraid.',
-    icon: BadgeAlert
-  },
-  {
     title: 'Delete there files',
     description: '*their',
     icon: Shredder
-  },
-  {
-    title: 'A word from Jim',
-    description: 'I\'d rather clean toilets than scam people.',
-    icon: Toilet
   },
 ]
 
@@ -131,33 +111,13 @@ onMounted(() => {
 <template>
   <main class="mx-auto max-w-6xl px-6 py-10 text-white">
     <section class="mb-10">
-      <p class="mb-2 text-2xl font-medium text-cyan-400">
-        Dashboard
+      <p class="mb-2 text-2xl font-bold text-cyan-400">
+        Welcome
       </p>
       <p class="text-sm text-slate-300">
         Improve your digital safety habits by practising basic cybersecurity skills through simple
         tools, checklists and awareness tips.
       </p>
-    </section>
-
-    <section class="mb-10 grid gap-6 md:grid-cols-3">
-      <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-        <p class="text-sm text-slate-400">Risk Score</p>
-        <p class="mt-2 text-5xl font-bold text-yellow-400">72</p>
-        <p class="mt-2 text-sm text-slate-300">Moderate risk</p>
-      </div>
-
-      <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-        <p class="text-sm text-slate-400">Completed Tools</p>
-        <p class="mt-2 text-5xl font-bold text-cyan-400">1/4</p>
-        <p class="mt-2 text-sm text-slate-300">Start with the password checker.</p>
-      </div>
-
-      <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-        <p class="text-sm text-slate-400">Security Level</p>
-        <p class="mt-2 text-5xl font-bold text-emerald-400">Basic</p>
-        <p class="mt-2 text-sm text-slate-300">Build better habits step by step.</p>
-      </div>
     </section>
 
     <section>
@@ -188,18 +148,6 @@ onMounted(() => {
         </h2>
       </div>
 
-      <!-- <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-        <div class="flex">
-          <component :is="randomTip?.icon" class="mb-4 text-cyan-400 mr-2" :size="25" />
-          <p class="mb-2 text-lg font-semibold text-cyan-400">
-            {{ randomTip?.title }}
-          </p>
-        </div>
-
-        <p class="text-sm text-slate-300">
-          {{ randomTip?.description }}
-        </p>
-      </div> -->
       <div v-if="randomTip">
         <TipCard :title="randomTip.title" :description="[randomTip.description]" :icon="randomTip.icon" />
       </div>
