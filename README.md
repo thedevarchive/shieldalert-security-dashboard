@@ -25,16 +25,25 @@ Once the project is running, you will see the landing page (index.vue). Click on
 
 ## Password Checker
 
-
+Enter a password in the input box, and it will determine the strength of that password. The page features a status bar showing the password's strength, a checklist that lets you know how to strengthen your password and an estimate of how long it will take crack the password through brute force. 
 
 ## Phishing Quiz
 
+Given a sample email, you will have to determine if it is a suspicious email or not. If you think it is "safe", click on "Looks safe". Otherwise, click on "Looks suspicious". 
+
 ## Link Checklist 
+
+Enter a link in the input box, and it will determine how suspicious the link is. This also shows a status bar of how suspicious the link is and a checklist of how many red flags the link has ticked. 
+
+Disclaimer: This feature does not check for all possible suspicious terms, domain endings or misspelled websites. You may also need to verify the context and sender to ensure the link is not suspicious.
 
 ## Breach Response Checklist
 
+This is a page that tells you what to do when any of your accounts have been compromised. Tick the boxes next to the actions you have taken. The page also has a progress bar determining how many steps you have completed on the checklist. 
+
 # Features
 
+* Landing page complete with tips that improve user's security
 * Password checker that tests the strength of an entered password, including an estimate of how fast the password could be cracked
 * Quiz that tests users on identifying phishing emails 
 * Link checker the identifies if the link is suspicious
@@ -43,7 +52,7 @@ Once the project is running, you will see the landing page (index.vue). Click on
 # Upcoming Features 
 
 * Navbar revamp
-* 
+* Courses feature
 
 # How to Report Issues
 
