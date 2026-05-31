@@ -12,7 +12,7 @@
         class="block rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white"
       >
         {{ section.title }}
-      </a>
+      </a> 
     </nav>
   </aside>
 </template>
