@@ -136,26 +136,31 @@
 
           <div class="space-y-3">
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Tonkin, C. (2020). <em>Dodgy Zoom invite brings down $75m hedge fund.</em>
+              Tonkin, C. (2020). <em>Dodgy Zoom invite brings down $75m hedge fund. </em>
               <a class="text-cyan-400" href="https://ia.acs.org.au/article/2020/dodgy-zoom-invite-brings-down--75m-hedge-fund.html">ACS Information Age.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Tassell, D. (2022). <em>Queensland University of Technology dealing with cybersecurity attack.</em>
+              Tassell, D. (2022). <em>Queensland University of Technology dealing with cybersecurity attack. </em>
               <a class="text-cyan-400" href="https://7news.com.au/news/cyber-security/queensland-university-of-technology-dealing-with-cybersecurity-attack-leaving-students-data-exposed-c-9247260">7NEWS.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Osborne, C. (2025). <em>Worried about the nationwide Canvas data breach? Take these 6 steps now.</em>
+              Osborne, C. (2026). <em>Worried about the nationwide Canvas data breach? Take these 6 steps now. </em> 
+              <a class="text-cyan-400" href="https://status.instructure.com/incidents/9wm4knj2r64z">Instructure.</a>
+            </div>
+
+            <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+              Proud, S. (2026). <em>Confirmed Security Incident. </em> 
               <a class="text-cyan-400" href="https://www.zdnet.com/article/canvas-breach-disrupts-schools-nationwide-6-steps-to-take-now/">ZDNet.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Rhodes, A (2023). <em>IFN541 Information Security Management: Why we need Information Security Management.</em> [Presentation]. <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a> 
+              Rhodes, A. (2023). <em>IFN541 Information Security Management: Why we need Information Security Management.</em> [Presentation]. <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a> 
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Rhodes, A (2023). <em>IFN541 Information Security Management: Fundamental Information Security Concepts.</em> [Presentation]. <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a> 
+              Rhodes, A. (2023). <em>IFN541 Information Security Management: Fundamental Information Security Concepts.</em> [Presentation]. <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a> 
             </div>
           </div>
         </section>
