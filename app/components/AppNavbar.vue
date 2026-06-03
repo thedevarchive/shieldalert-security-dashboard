@@ -17,7 +17,7 @@ import { ShieldCog } from '@lucide/vue';
       <div class="flex gap-20 px-20">
         <div class="relative group">
           <button class="text-xl font-semibold text-slate-300 hover:text-white">
-            Tools
+            Tools ▾
           </button>
 
           <div class="absolute left-1/2 -translate-x-1/2 top-full hidden pt-2 group-hover:block">
@@ -43,7 +43,7 @@ import { ShieldCog } from '@lucide/vue';
 
         <div class="relative group">
           <button class="text-xl font-semibold text-slate-300 hover:text-white">
-            Courses
+            Courses ▾
           </button>
 
           <div class="absolute left-1/2 -translate-x-1/2 top-full hidden pt-2 group-hover:block">

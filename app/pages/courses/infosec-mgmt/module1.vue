@@ -126,8 +126,22 @@
 
         <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
-            Security controls
+            Additional security goals
           </h2>
+
+          <p class="mb-4 text-slate-300">
+            According to Rhodes, these additional goals could also be considered necessary to establish security. 
+          </p>
+
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Identification</li>
+            <li>Authentication</li>
+            <li>Authorisation</li>
+            <li>Accountability</li>
+            <li>Non-repudiation</li>
+          </ul>
+
+
         </section>
 
         <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">

@@ -23,7 +23,7 @@ const checks = computed(() => [
     passed: /\d/.test(password.value),
   },
   {
-    label: 'Contains symbols',
+    label: 'Contains special characters',
     passed: /[^A-Za-z0-9]/.test(password.value),
   },
   {
@@ -170,7 +170,7 @@ const crackTimeLabel = computed(() => {
 
         <p class="mt-2 text-sm text-slate-400">
           Estimate assumes 1 billion guesses per second and no password leaks, reuse,
-          phishing, or personal information clues.
+          phishing or personal information clues.
         </p>
       </div>
 
