@@ -48,7 +48,7 @@ import { ShieldCog } from '@lucide/vue';
 
           <div class="absolute left-1/2 -translate-x-1/2 top-full hidden pt-2 group-hover:block">
             <div class="min-w-56 rounded-lg border border-slate-800 bg-slate-900 p-2 shadow-lg">
-              <NuxtLink to="/courses/infosec-mgmt/course1" class="block rounded px-3 py-2 hover:bg-slate-800">
+              <NuxtLink to="/courses/infosec-mgmt/module1" class="block rounded px-3 py-2 hover:bg-slate-800">
                 Information Security Management
               </NuxtLink>
             </div>

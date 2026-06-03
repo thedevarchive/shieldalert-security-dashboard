@@ -7,7 +7,7 @@
         </NuxtLink>
 
         <p class="mb-2 font-semibold text-cyan-400">
-          Course 1
+          Module 1
         </p>
 
         <h1 class="mb-4 text-4xl font-bold">
@@ -23,7 +23,7 @@
           <p class="mt-1 text-lg font-semibold">45 minutes</p>
         </div>
 
-        <section id="what-is-information-security" class="scroll-mt-24 border-b border-slate-800 pb-10">
+        <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
           <h2 class="mb-4 text-2xl font-semibold">
             What is information security?
           </h2>
@@ -41,7 +41,7 @@
           </p>
         </section>
 
-        <section id="common-warning-signs" class="scroll-mt-24 border-b border-slate-800 py-10">
+        <section id="1" class="scroll-mt-24 border-b border-slate-800 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
             Why is information security management needed?
           </h2>
@@ -94,7 +94,7 @@
           </p>
         </section>
 
-        <section id="real-world-example" class="scroll-mt-24 border-b border-slate-800 py-10">
+        <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
             Security goals
           </h2>
@@ -119,17 +119,24 @@
           <p class="mb-4 text-slate-300">
             Confidentiality refers to the limiting of access to the information to only those who need or use it, and
             preventing access to those who do not.
-
+            Integrity refers to the completeness and wholeness of data. When data is altered, corrupted or damaged during entry, storage or transmission, it loses its integrity.
+            Availability describes how accessible data is to those who need it. The data must also be in readable format. 
           </p>
         </section>
 
-        <section id="how-to-respond" class="scroll-mt-24 border-b border-slate-800 py-10">
+        <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
             Security controls
           </h2>
         </section>
 
-        <section id="key-takeaways" class="scroll-mt-24 py-10">
+        <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+          <h2 class="mb-4 text-2xl font-semibold">
+            Security controls
+          </h2>
+        </section>
+
+        <section id="5" class="scroll-mt-24 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
             Sources
           </h2>
@@ -185,24 +192,28 @@
 <script setup lang="ts">
 const sections = [
   {
-    id: 'what-is-information-security',
+    id: '0',
     title: 'What is information security?',
   },
   {
-    id: 'common-warning-signs',
+    id: '1',
     title: 'Common warning signs',
   },
   {
-    id: 'real-world-example',
-    title: 'Real-world example',
+    id: '2',
+    title: 'Security goals',
   },
   {
-    id: 'how-to-respond',
-    title: 'How to respond safely',
+    id: '3',
+    title: 'Additional security goals',
   },
   {
-    id: 'key-takeaways',
-    title: 'Key takeaways',
+    id: '4',
+    title: 'Security controls',
+  },
+  {
+    id: '5',
+    title: 'Sources',
   },
 ]
 </script>
