@@ -119,8 +119,14 @@
           <p class="mb-4 text-slate-300">
             Confidentiality refers to the limiting of access to the information to only those who need or use it, and
             preventing access to those who do not.
-            Integrity refers to the completeness and wholeness of data. When data is altered, corrupted or damaged during entry, storage or transmission, it loses its integrity.
-            Availability describes how accessible data is to those who need it. The data must also be in readable format. 
+            Integrity refers to the completeness and wholeness of data. When data is altered, corrupted or damaged
+            during entry, storage or transmission, it loses its integrity.
+            Availability describes how accessible data is to those who need it. The data must also be in readable
+            format.
+          </p>
+
+          <p class="mb-4 text-slate-300">
+            Note that confidentiality and privacy are different terms. Privacy is the end goal of information security while confidentiality is the means to attain security.
           </p>
         </section>
 
@@ -130,7 +136,7 @@
           </h2>
 
           <p class="mb-4 text-slate-300">
-            According to Rhodes, these additional goals could also be considered necessary to establish security. 
+            According to Rhodes, these additional goals could also be considered necessary to establish security.
           </p>
 
           <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
@@ -141,13 +147,37 @@
             <li>Non-repudiation</li>
           </ul>
 
-
+          <p class="mb-4 text-slate-300">
+            Identification refers to the system's ability to recognise users and who has rightful access to the information. 
+            Authentication verifies the user's identity. 
+            Authorisation specifies what the user is allowed to do with the data. 
+            Accountability is when a system or control keeps track of activity done to the data. Each activity should also be traced back to the person who did the activity. 
+            Non-repudiation refers to creating irrefutable proof that the activity occurred and the user has done it. 
+          </p>
         </section>
 
         <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
             Security controls
           </h2>
+
+          <p class="mb-4 text-slate-300">
+            According to Rhodes, controls refer to the measures taken to counter security threats, reduce vulnerabilities or prevent attacks. 
+          </p>
+
+          <p class="mb-4 text-slate-300">
+            There are three kinds of controls: 
+          </p>
+
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Preventive</li>
+            <li>Detective</li>
+            <li>Corrective</li>
+          </ul>
+
+          <p class="mb-4 text-slate-300">
+            Preventive controls reduce the occurrence of incidents, detective controls identify incidents or incoming attacks, while corrective controls correct or restore the data or files that were corrupted during an attack or incident.
+          </p>
         </section>
 
         <section id="5" class="scroll-mt-24 py-10">
@@ -158,30 +188,38 @@
           <div class="space-y-3">
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
               Tonkin, C. (2020). <em>Dodgy Zoom invite brings down $75m hedge fund. </em>
-              <a class="text-cyan-400" href="https://ia.acs.org.au/article/2020/dodgy-zoom-invite-brings-down--75m-hedge-fund.html">ACS Information Age.</a>
+              <a class="text-cyan-400"
+                href="https://ia.acs.org.au/article/2020/dodgy-zoom-invite-brings-down--75m-hedge-fund.html">ACS
+                Information Age.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
               Tassell, D. (2022). <em>Queensland University of Technology dealing with cybersecurity attack. </em>
-              <a class="text-cyan-400" href="https://7news.com.au/news/cyber-security/queensland-university-of-technology-dealing-with-cybersecurity-attack-leaving-students-data-exposed-c-9247260">7NEWS.</a>
+              <a class="text-cyan-400"
+                href="https://7news.com.au/news/cyber-security/queensland-university-of-technology-dealing-with-cybersecurity-attack-leaving-students-data-exposed-c-9247260">7NEWS.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Osborne, C. (2026). <em>Worried about the nationwide Canvas data breach? Take these 6 steps now. </em> 
+              Osborne, C. (2026). <em>Worried about the nationwide Canvas data breach? Take these 6 steps now. </em>
               <a class="text-cyan-400" href="https://status.instructure.com/incidents/9wm4knj2r64z">Instructure.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Proud, S. (2026). <em>Confirmed Security Incident. </em> 
-              <a class="text-cyan-400" href="https://www.zdnet.com/article/canvas-breach-disrupts-schools-nationwide-6-steps-to-take-now/">ZDNet.</a>
+              Proud, S. (2026). <em>Confirmed Security Incident. </em>
+              <a class="text-cyan-400"
+                href="https://www.zdnet.com/article/canvas-breach-disrupts-schools-nationwide-6-steps-to-take-now/">ZDNet.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Rhodes, A. (2023). <em>IFN541 Information Security Management: Why we need Information Security Management.</em> [Presentation]. <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a> 
+              Rhodes, A. (2023). <em>IFN541 Information Security Management: Why we need Information Security
+                Management.</em> [Presentation]. <a class="text-cyan-400"
+                href="https://www.canvas.qut.edu.au/">Canvas.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-              Rhodes, A. (2023). <em>IFN541 Information Security Management: Fundamental Information Security Concepts.</em> [Presentation]. <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a> 
+              Rhodes, A. (2023). <em>IFN541 Information Security Management: Fundamental Information Security
+                Concepts.</em> [Presentation]. <a class="text-cyan-400"
+                href="https://www.canvas.qut.edu.au/">Canvas.</a>
             </div>
           </div>
         </section>
