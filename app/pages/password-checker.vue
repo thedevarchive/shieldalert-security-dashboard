@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { Eye, EyeOff, Lightbulb } from '@lucide/vue'
+import { Eye, EyeOff } from '@lucide/vue'
 import TipCard from '~/components/TipCard.vue'
 
-const password = ref('')
-const showPassword = ref(false)
+const password = ref('') //state for password input 
+const showPassword = ref(false) //determines if inputted password is shown or hidden
 
+// label has the password requirements user should ideally follow
+// passed contains the boolean condition/regex that checks if user's password is following the requirement 
 const checks = computed(() => [
   {
     label: 'At least 12 characters long',
@@ -32,15 +34,18 @@ const checks = computed(() => [
   },
 ])
 
+//get the number of passed conditions fulfilled by password 
 const passedChecks = computed(() => {
   return checks.value.filter((check) => check.passed).length
 })
 
+//calculate progress bar value 
 const score = computed(() => {
   if (!password.value) return 0
   return Math.round((passedChecks.value / checks.value.length) * 100)
 })
 
+//display strength of password based on the progress bar value 
 const strengthLabel = computed(() => {
   if (score.value === 0) return 'Not tested'
   if (score.value < 35) return 'Weak'

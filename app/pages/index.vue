@@ -2,6 +2,7 @@
 import TipCard from '~/components/TipCard.vue'
 import { CreditCard, Fish, FishingHook, Info, Lightbulb, Link2, LockKeyholeOpen, MailQuestionMark, MailWarning, PhoneMissed, RectangleEllipsis, RotateCcwKey, ScreenShareOff, Shredder, UserLock, VenetianMask } from '@lucide/vue';
 
+// list of general tips 
 const generalTips = [
   {
     title: 'Use unique passwords',
@@ -21,6 +22,7 @@ const generalTips = [
   },
 ]
 
+//randomly show one of these tips 
 const randomTips = [
   {
     title: 'Never share your OTP or password',

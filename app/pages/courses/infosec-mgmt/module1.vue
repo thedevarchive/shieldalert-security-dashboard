@@ -1,3 +1,51 @@
+<script setup lang="ts">
+const sections = [
+  {
+    id: '0',
+    title: 'What is information security?',
+  },
+  {
+    id: '1',
+    title: 'Common warning signs',
+  },
+  {
+    id: '2',
+    title: 'Security goals',
+  },
+  {
+    id: '3',
+    title: 'Additional security goals',
+  },
+  {
+    id: '4',
+    title: 'Security controls',
+  },
+  {
+    id: '5',
+    title: 'Sources',
+  },
+]
+
+const selectedModule = ref('')
+
+const modules = [
+  {
+    title: 'Information Security Fundamentals',
+    path: '/courses/infosec-mgmt/module1',
+  },
+  {
+    title: 'Risk Statements',
+    path: '/courses/infosec-mgmt/module2',
+  },
+]
+
+function goToModule() {
+  if (selectedModule.value) {
+    navigateTo(selectedModule.value)
+  }
+}
+</script>
+
 <template>
   <main class="min-h-screen bg-slate-950 text-white">
     <section class="mx-auto flex max-w-7xl gap-8 px-6 py-10">
@@ -7,11 +55,11 @@
         </NuxtLink>
 
         <p class="mb-2 font-semibold text-cyan-400">
-          Module 1
+          Information Security Management: Module 1
         </p>
 
         <h1 class="mb-4 text-4xl font-bold">
-          Information Security Management
+          Information Security Fundamentals
         </h1>
 
         <p class="mb-8 text-slate-300">
@@ -20,7 +68,7 @@
 
         <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
           <p class="text-sm text-slate-400">Estimated reading time</p>
-          <p class="mt-1 text-lg font-semibold">45 minutes</p>
+          <p class="mt-1 text-lg font-semibold">8 minutes</p>
         </div>
 
         <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
@@ -126,7 +174,8 @@
           </p>
 
           <p class="mb-4 text-slate-300">
-            Note that confidentiality and privacy are different terms. Privacy is the end goal of information security while confidentiality is the means to attain security.
+            Note that confidentiality and privacy are different terms. Privacy is the end goal of information security
+            while confidentiality is the means to attain security.
           </p>
         </section>
 
@@ -148,11 +197,13 @@
           </ul>
 
           <p class="mb-4 text-slate-300">
-            Identification refers to the system's ability to recognise users and who has rightful access to the information. 
-            Authentication verifies the user's identity. 
-            Authorisation specifies what the user is allowed to do with the data. 
-            Accountability is when a system or control keeps track of activity done to the data. Each activity should also be traced back to the person who did the activity. 
-            Non-repudiation refers to creating irrefutable proof that the activity occurred and the user has done it. 
+            Identification refers to the system's ability to recognise users and who has rightful access to the
+            information.
+            Authentication verifies the user's identity.
+            Authorisation specifies what the user is allowed to do with the data.
+            Accountability is when a system or control keeps track of activity done to the data. Each activity should
+            also be traced back to the person who did the activity.
+            Non-repudiation refers to creating irrefutable proof that the activity occurred and the user has done it.
           </p>
         </section>
 
@@ -162,11 +213,12 @@
           </h2>
 
           <p class="mb-4 text-slate-300">
-            According to Rhodes, controls refer to the measures taken to counter security threats, reduce vulnerabilities or prevent attacks. 
+            According to Rhodes, controls refer to the measures taken to counter security threats, reduce
+            vulnerabilities or prevent attacks.
           </p>
 
           <p class="mb-4 text-slate-300">
-            There are three kinds of controls: 
+            There are three kinds of controls:
           </p>
 
           <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
@@ -176,7 +228,9 @@
           </ul>
 
           <p class="mb-4 text-slate-300">
-            Preventive controls reduce the occurrence of incidents, detective controls identify incidents or incoming attacks, while corrective controls correct or restore the data or files that were corrupted during an attack or incident.
+            Preventive controls reduce the occurrence of incidents, detective controls identify incidents or incoming
+            attacks, while corrective controls correct or restore the data or files that were corrupted during an attack
+            or incident.
           </p>
         </section>
 
@@ -225,14 +279,22 @@
         </section>
 
         <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
-          <NuxtLink to="/courses"
-            class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
-            Back to courses
+          <NuxtLink class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
+            Previous
           </NuxtLink>
 
-          <button class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
-            Mark as complete
-          </button>
+          <div>
+            <select v-model="selectedModule" @change="goToModule"
+              class="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-white">
+              <option value="">Jump to module…</option>
+              <option v-for="module in modules" :key="module.title" :value="module.path">{{ module.title }}</option>
+            </select>
+          </div>
+
+          <NuxtLink to="/courses/infosec-mgmt/module2"
+            class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
+            Next
+          </NuxtLink>
         </div>
       </article>
 
@@ -240,32 +302,3 @@
     </section>
   </main>
 </template>
-
-<script setup lang="ts">
-const sections = [
-  {
-    id: '0',
-    title: 'What is information security?',
-  },
-  {
-    id: '1',
-    title: 'Common warning signs',
-  },
-  {
-    id: '2',
-    title: 'Security goals',
-  },
-  {
-    id: '3',
-    title: 'Additional security goals',
-  },
-  {
-    id: '4',
-    title: 'Security controls',
-  },
-  {
-    id: '5',
-    title: 'Sources',
-  },
-]
-</script>
