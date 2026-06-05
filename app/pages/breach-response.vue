@@ -10,6 +10,7 @@
       </p>
     </section>
 
+    <!-- checklist user should tick when they accomplish the steps for their account -->
     <section class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
       <div v-for="item in checklist" :key="item.title" class="mb-4 rounded-xl border border-slate-800 bg-slate-950 p-5">
         <div class="flex items-start gap-4">
@@ -52,7 +53,7 @@
 </template>
 
 <script setup lang="ts">
-import { CircleAlert, TriangleAlert } from '@lucide/vue'
+import { TriangleAlert } from '@lucide/vue'
 
 type ChecklistItem = {
   title: string
@@ -99,10 +100,12 @@ const checklist = ref<ChecklistItem[]>([
   },
 ])
 
+//get number of steps ticked
 const completedSteps = computed(() => {
   return checklist.value.filter((item) => item.completed).length
 })
 
+//calculate progress bar value for UI 
 const progress = computed(() => {
   return (completedSteps.value / checklist.value.length) * 100
 })

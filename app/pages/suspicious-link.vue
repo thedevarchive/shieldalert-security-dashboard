@@ -64,10 +64,11 @@
 </template>
 
 <script setup lang="ts">
-const link = ref('')
+const link = ref('') //state for user-inputted suspicious link 
 
+//similar to password checker, the link is tested against boolean conditions or regexes in the failed properties 
 const checks = computed(() => {
-  const value = link.value.toLowerCase()
+  const value = link.value.toLowerCase() //set link to lowercase 
 
   return [
     {
@@ -97,16 +98,20 @@ const checks = computed(() => {
   ]
 })
 
+//get number of failed checks (aka how many red flags the link fulfils)
 const failedChecks = computed(() => {
   return checks.value.filter((check) => check.failed).length
 })
 
+//calculate risk score
+//(each red flag increases the risk score by 20)
 const riskScore = computed(() => {
   if (!link.value) return 0
 
   return Math.min(failedChecks.value * 20, 100)
 })
 
+//show risk status to user 
 const riskLabel = computed(() => {
   if (!link.value) return 'Not tested'
   if (riskScore.value < 25) return 'Little to no red flags'
