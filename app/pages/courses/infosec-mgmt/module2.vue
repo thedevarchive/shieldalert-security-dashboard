@@ -12,6 +12,10 @@ const sections = [
         id: '2',
         title: 'Communicating risks',
     },
+    {
+        id: '5',
+        title: 'Sources',
+    },
 ]
 
 const selectedModule = ref('')
@@ -144,8 +148,8 @@ function goToModule() {
 
                     <div class="space-y-3">
                         <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            <a class="text-cyan-400"
-                                href="https://www.iso.org/standard/73906.html">International Organization for Standardization.</a> (2018).
+                            <a class="text-cyan-400" href="https://www.iso.org/standard/73906.html">International
+                                Organization for Standardization.</a> (2018).
                             ISO/IEC 27000:2018 Information technology — Security techniques —
                             Information security management systems — Overview and vocabulary.
                         </div>
@@ -169,7 +173,7 @@ function goToModule() {
                             class="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-white">
                             <option value="">Jump to module…</option>
                             <option v-for="module in modules" :key="module.title" :value="module.path">{{ module.title
-                                }}</option>
+                            }}</option>
                         </select>
                     </div>
 
