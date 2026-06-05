@@ -14,7 +14,7 @@ import { ShieldCog } from '@lucide/vue';
         </div>
       </NuxtLink>
 
-      <div class="flex gap-20">
+      <div class="flex gap-20 items-right">
         <div class="relative group">
           <button class="text-xl font-semibold text-slate-300 hover:text-white">
             Tools ▾
