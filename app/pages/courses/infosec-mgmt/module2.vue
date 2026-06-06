@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import InfoSecSelect from '~/components/selects/InfoSecSelect.vue';
+
 const sections = [
     {
         id: '0',
@@ -17,25 +19,6 @@ const sections = [
         title: 'Sources',
     },
 ]
-
-const selectedModule = ref('')
-
-const modules = [
-    {
-        title: 'Information Security Fundamentals',
-        path: '/courses/infosec-mgmt/module1',
-    },
-    {
-        title: 'Risk Management',
-        path: '/courses/infosec-mgmt/module2',
-    },
-]
-
-function goToModule() {
-    if (selectedModule.value) {
-        navigateTo(selectedModule.value)
-    }
-}
 </script>
 
 <template>
@@ -168,14 +151,7 @@ function goToModule() {
                         Previous
                     </NuxtLink>
 
-                    <div>
-                        <select v-model="selectedModule" @change="goToModule"
-                            class="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-white">
-                            <option value="">Jump to module…</option>
-                            <option v-for="module in modules" :key="module.title" :value="module.path">{{ module.title
-                            }}</option>
-                        </select>
-                    </div>
+                    <InfoSecSelect /> 
 
                     <NuxtLink to="/courses/cybersec-intro/module2"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
