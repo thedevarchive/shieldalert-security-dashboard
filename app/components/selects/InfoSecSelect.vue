@@ -8,6 +8,10 @@ const modules = [
     title: 'Risk Statements',
     path: '/courses/infosec-mgmt/module2',
   },
+  {
+    title: 'Security Management Frameworks',
+    path: '/courses/infosec-mgmt/module3',
+  },
 ]
 </script>
 
