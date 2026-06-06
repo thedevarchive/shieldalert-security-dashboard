@@ -94,6 +94,14 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        This is a popular framework that also pairs well with ISO 27001. 
+                        It is also known for covering controls that are not necessarily technology-based. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        However, both ISO 27001 and 27002 costs money to own. 
+                        Moreover, ISO 27002 requires an information security professional to apply it since implementation of the controls are difficult to understand.
+                        It also does not provide mappings to other well-known frameworks. 
                     </p>
                 </section>
 
