@@ -21,6 +21,7 @@
         </p>
       </div>
 
+      <!-- Format questions like an email -->
       <div class="rounded-xl border border-slate-700 bg-slate-950 p-5" v-if="!hasAnswered">
         <p class="mb-2 text-sm text-slate-400">
           From: {{ currentQuestion?.from }}
@@ -34,7 +35,8 @@
           {{ currentQuestion?.body }}
         </p>
       </div>
-
+      
+      <!-- User choices -->
       <div v-if="!hasAnswered" class="mt-6 flex gap-3">
         <button @click="answerQuestion('safe')"
           class="rounded-xl bg-emerald-500 px-5 py-3 font-medium text-white transition hover:bg-emerald-400">
@@ -69,6 +71,7 @@
           </ul>
         </div>
 
+        <!-- This button moves user to the next question -->
         <button @click="nextQuestion"
           class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400">
           {{ isLastQuestion ? 'Finish quiz' : 'Next question' }}
@@ -85,6 +88,7 @@
         You scored {{ score }} out of {{ questions.length }}.
       </p>
 
+      <!-- Button for resetting quiz -->
       <button @click="restartQuiz"
         class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400">
         Try again
@@ -96,6 +100,9 @@
 <script setup lang="ts">
 type Answer = 'safe' | 'phishing'
 
+//from, subject and body simulate a sample email question
+//correctAnswer determines if email is phishing or not 
+//explanation and redFlags explain to user why email is phishing or not 
 type Question = {
   from: string
   subject: string
@@ -105,6 +112,7 @@ type Question = {
   redFlags: string[]
 }
 
+//list of questions
 let questions: Question[] = [
   {
     from: 'skay@funds.biz',
@@ -318,26 +326,30 @@ Payroll Team`,
   },
 ]
 
+//shuffle questions 
 const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5)
 questions = shuffledQuestions
 
-const currentQuestionIndex = ref(0)
-const selectedAnswer = ref<Answer | null>(null)
-const score = ref(0)
-const quizFinished = ref(false)
+const currentQuestionIndex = ref(0) // get current question number
+const selectedAnswer = ref<Answer | null>(null) // gets user's answer 
+const score = ref(0) // get user's score 
+const quizFinished = ref(false) //check if quiz is finished
 
-const currentQuestion = computed(() => questions[currentQuestionIndex.value])
+const currentQuestion = computed(() => questions[currentQuestionIndex.value]) //get current question
 
-const hasAnswered = computed(() => selectedAnswer.value !== null)
+const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered 
 
+//compares user's answers to correct answer of current question
 const isCorrect = computed(() => {
   return selectedAnswer.value === currentQuestion.value?.correctAnswer
 })
 
+//checks if user is at last question to finish the quiz
 const isLastQuestion = computed(() => {
   return currentQuestionIndex.value === questions.length - 1
 })
 
+//record user's answer and add 1 to user's score if user got it right 
 function answerQuestion(answer: Answer) {
   selectedAnswer.value = answer
 
@@ -346,6 +358,8 @@ function answerQuestion(answer: Answer) {
   }
 }
 
+//increment quiz question index by 1 unless quiz is at last question 
+//after moving to next question, reset user's selected answer to null 
 function nextQuestion() {
   if (isLastQuestion.value) {
     quizFinished.value = true
@@ -356,6 +370,7 @@ function nextQuestion() {
   selectedAnswer.value = null
 }
 
+//reset all values and allow user to take the quiz again 
 function restartQuiz() {
   currentQuestionIndex.value = 0
   selectedAnswer.value = null
