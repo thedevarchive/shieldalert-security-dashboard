@@ -34,11 +34,11 @@ const sections = [
                 </p>
 
                 <h1 class="mb-4 text-4xl font-bold">
-                    Security Management Frameworks 
+                    Security Management Frameworks
                 </h1>
 
                 <p class="mb-8 text-slate-300">
-                    Learn about the different security management frameworks. 
+                    Learn about the different security management frameworks.
                 </p>
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -48,19 +48,22 @@ const sections = [
 
                 <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        What are security management frameworks? 
+                        What are security management frameworks?
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        According to Rhodes, security management frameworks provide a structured management of information security for companies and organisations. 
-                        These frameworks offer a starting point for organisations that do not have information management or have a disorganised information management. 
-                        It is also used to plan information security in the workplace and inform stakeholders that risks are being managed properly. 
+                        According to Rhodes, security management frameworks provide a structured management of
+                        information security for companies and organisations.
+                        These frameworks offer a starting point for organisations that do not have information
+                        management or have a disorganised information management.
+                        It is also used to plan information security in the workplace and inform stakeholders that risks
+                        are being managed properly.
                     </p>
                 </section>
 
                 <section id="1" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Examples of security management frameworks 
+                        Examples of security management frameworks
                     </h2>
 
                     <p class="mb-4 text-slate-300">
@@ -69,7 +72,25 @@ const sections = [
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        ISO 27001 Information Security Management Systems 
+                        ISO 27001 Information Security Management Systems
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        According to Rhodes, this framework contains the requirements for implementing an Information
+                        Security Management System (ISMS). It aims to align risk management with the organisation's goals, so it works best with any organisation. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        This is a framework often used in countries like the UK and Australia, but is less popular in
+                        the United States.
+                        In fact, most Queensland State Government agencies are required to have an ISMS based on the
+                        framework stated in ISO 27001.
+                    </p>
+                </section>
+
+                <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        ISO 27002
                     </h2>
 
                     <p class="mb-4 text-slate-300">
@@ -83,7 +104,8 @@ const sections = [
 
                     <div class="space-y-3">
                         <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Security Management Frameworks.</em> [Presentation]. <a class="text-cyan-400"
+                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Security Management
+                                Frameworks.</em> [Presentation]. <a class="text-cyan-400"
                                 href="https://www.canvas.qut.edu.au/">Canvas.</a>
                         </div>
                     </div>
@@ -95,7 +117,7 @@ const sections = [
                         Previous
                     </NuxtLink>
 
-                    <InfoSecSelect /> 
+                    <InfoSecSelect />
 
                     <NuxtLink to="/courses/cybersec-intro/module2"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
