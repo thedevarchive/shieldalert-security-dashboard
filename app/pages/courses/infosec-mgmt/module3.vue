@@ -105,6 +105,20 @@ const sections = [
                     </p>
                 </section>
 
+                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        NIST Cybersecurity Framework
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        While this framework was made by the US Government, it can be used by any sector from any industry. 
+                        This framework also focuses on the big picture. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                    </p>
+                </section>
+
                 <section id="5" class="scroll-mt-24 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         Sources
