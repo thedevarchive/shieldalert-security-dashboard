@@ -8,11 +8,15 @@ const sections = [
     },
     {
         id: '1',
-        title: 'Examples of security management frameworks',
+        title: 'ISO 27001 Information Security Management Systems',
     },
     {
         id: '2',
-        title: 'ISO 27001 Information Security Management Systems',
+        title: 'ISO 27002',
+    },
+    {
+        id: '3',
+        title: 'NIST Cybersecurity Framework',
     },
     {
         id: '5',
@@ -63,15 +67,6 @@ const sections = [
 
                 <section id="1" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Examples of security management frameworks
-                    </h2>
-
-                    <p class="mb-4 text-slate-300">
-                    </p>
-                </section>
-
-                <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
-                    <h2 class="mb-4 text-2xl font-semibold">
                         ISO 27001 Information Security Management Systems
                     </h2>
 
@@ -88,7 +83,7 @@ const sections = [
                     </p>
                 </section>
 
-                <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
+                <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         ISO 27002
                     </h2>
@@ -105,17 +100,16 @@ const sections = [
                     </p>
                 </section>
 
-                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+                <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         NIST Cybersecurity Framework
                     </h2>
 
                     <p class="mb-4 text-slate-300">
                         While this framework was made by the US Government, it can be used by any sector from any industry. 
-                        This framework also focuses on the big picture. 
-                    </p>
-
-                    <p class="mb-4 text-slate-300">
+                        This framework also focuses on the big picture of cybersecurity. 
+                        The NIST documents are available without cost and has been frequently reviewed and updated by the US government and industry professionals. 
+                        It also comes with special publications to allow the organisation to customise their own information security program. 
                     </p>
                 </section>
 
