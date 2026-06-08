@@ -146,6 +146,9 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        Security controls frameworks have a baseline standard to measure the maturity of implemented controls. 
+                        They are an ideal choice for professionals who are not experts in information security, especially when the current controls implemented are disorganised or minimal. 
+                        They also ensure that all possible controls are regarded while planning and performing risk assessments. 
                     </p>
                 </section>
 
