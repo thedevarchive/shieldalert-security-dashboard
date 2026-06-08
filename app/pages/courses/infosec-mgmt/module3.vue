@@ -19,7 +19,15 @@ const sections = [
         title: 'NIST Cybersecurity Framework',
     },
     {
+        id: '4',
+        title: 'Cloud Security Alliance Cloud Controls Matrix',
+    },
+    {
         id: '5',
+        title: 'What are security controls frameworks?',
+    },
+    {
+        id: '6',
         title: 'Sources',
     },
 ]
@@ -38,7 +46,7 @@ const sections = [
                 </p>
 
                 <h1 class="mb-4 text-4xl font-bold">
-                    Security Management Frameworks
+                    Security Management Frameworks and Controls Management
                 </h1>
 
                 <p class="mb-8 text-slate-300">
@@ -72,7 +80,8 @@ const sections = [
 
                     <p class="mb-4 text-slate-300">
                         According to Rhodes, this framework contains the requirements for implementing an Information
-                        Security Management System (ISMS). It aims to align risk management with the organisation's goals, so it works best with any organisation. 
+                        Security Management System (ISMS). It aims to align risk management with the organisation's
+                        goals, so it works best with any organisation.
                     </p>
 
                     <p class="mb-4 text-slate-300">
@@ -89,14 +98,15 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        This is a popular framework that also pairs well with ISO 27001. 
-                        It is also known for covering controls that are not necessarily technology-based. 
+                        This is a popular framework that also pairs well with ISO 27001.
+                        It is also known for covering controls that are not necessarily technology-based.
                     </p>
 
                     <p class="mb-4 text-slate-300">
-                        However, both ISO 27001 and 27002 costs money to own. 
-                        Moreover, ISO 27002 requires an information security professional to apply it since implementation of the controls are difficult to understand.
-                        It also does not provide mappings to other well-known frameworks. 
+                        However, both ISO 27001 and 27002 costs money to own.
+                        Moreover, ISO 27002 requires an information security professional to apply it since
+                        implementation of the controls are difficult to understand.
+                        It also does not provide mappings to other well-known frameworks.
                     </p>
                 </section>
 
@@ -106,14 +116,40 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        While this framework was made by the US Government, it can be used by any sector from any industry. 
-                        This framework also focuses on the big picture of cybersecurity. 
-                        The NIST documents are available without cost and has been frequently reviewed and updated by the US government and industry professionals. 
-                        It also comes with special publications to allow the organisation to customise their own information security program. 
+                        While this framework was made by the US Government, it can be used by any sector from any
+                        industry.
+                        This framework also focuses on the big picture of cybersecurity.
+                        The NIST documents are available without cost and has been frequently reviewed and updated by
+                        the US government and industry professionals.
+                        It also comes with special publications to allow the organisation to customise their own
+                        information security program.
                     </p>
                 </section>
 
-                <section id="5" class="scroll-mt-24 py-10">
+                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Cloud Security Alliance Cloud Controls Matrix
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        The Cloud Security Alliance (CSA) Cloud Controls Matrix is a controls management framework for
+                        cloud service providers.
+                        However, it is not suited for other organisations.
+                        While it is not an information security management framework, it does supply third-party risk
+                        management.
+                    </p>
+                </section>
+
+                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        What are security controls frameworks?
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                    </p>
+                </section>
+
+                <section id="6" class="scroll-mt-24 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         Sources
                     </h2>

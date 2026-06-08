@@ -9,7 +9,7 @@ const modules = [
     path: '/courses/infosec-mgmt/module2',
   },
   {
-    title: 'Security Management Frameworks',
+    title: 'Security Management Frameworks and Controls Management',
     path: '/courses/infosec-mgmt/module3',
   },
 ]
