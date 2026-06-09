@@ -236,7 +236,7 @@ const sections = [
                 </section>
 
                 <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
-                    <NuxtLink
+                    <NuxtLink to="/courses/infosec-mgmt/module3"
                         class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
                         Previous
                     </NuxtLink>

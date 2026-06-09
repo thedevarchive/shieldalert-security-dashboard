@@ -107,6 +107,34 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        A denial of service (DoS) attack prevents authorised users from accessing the information that they have permission for. 
+                        Attackers would corrupt the file, sever the communication between the user and the system or even crashing the service by sending many requests. 
+                        A distributed denial of service (DDoS) works similarly, but multiple attackers or machines attempt make the system deny legitimate requests from authorised users. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        Spoofing is when an attacker assumes to be a different entity in order to trick others into giving the attacker their information or credentials. 
+                        Some common spoofing attacks are caller ID spoofing, email spoofing and webpage spoofing. 
+                        Social engineering is when attackers simulate social situations to allow people to reveal information to them or let attackers access resources. 
+                        They can claim to be someone they know, such as a family member or a coworker, and ask the victim for information. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        Phishing is a method that combines spoofing and social engineering. 
+                        It involves the attacker starting communication with their victim while pretending to be an authorised entity. 
+                        They would also pressure the victim into acting on their communicated requests immediately either with a consequence or a reward. 
+                        For example, an attacker would send an email pretending to be tech support and threaten the user to lock up their account if they do not fulfil a payment. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        A man-in-the-middle (MITM) attack happens when an attacker intervenes in the middle of a conversation. 
+                        The people in the conversation would believe that they are talking to one another, when in fact, the attacker is talking to both of them separately. 
+                        In this way, the attacker seizes control of the conversation. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        A replay attack happens when the attacker records a certain information or credential from an authorised user, and uses that information to allow the attacker to access it. 
+                        The attacker may not know what the exact credentials are, and can simply record and replicate the encrypted value.  
                     </p>
                 </section>
 

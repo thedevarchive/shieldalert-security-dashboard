@@ -144,14 +144,14 @@ const sections = [
                 </section>
 
                 <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
-                    <NuxtLink to="/courses/infosec-mgmt/module1"
+                    <NuxtLink to="/courses/infosec-mgmt/module2"
                         class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
                         Previous
                     </NuxtLink>
 
                     <SelectInfoSec /> 
 
-                    <NuxtLink to="/courses/infosec-mgmt/module3"
+                    <NuxtLink to="/courses/infosec-mgmt/module4"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
                         Next
                     </NuxtLink>
