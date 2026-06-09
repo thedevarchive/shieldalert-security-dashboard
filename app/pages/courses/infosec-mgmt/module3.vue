@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import InfoSecSelect from '~/components/selects/InfoSecSelect.vue';
-
 const sections = [
     {
         id: '0',
@@ -28,6 +26,18 @@ const sections = [
     },
     {
         id: '6',
+        title: 'ISO 27002',
+    },
+    {
+        id: '7',
+        title: 'Secure Controls Framework (SCF)',
+    },
+    {
+        id: '8',
+        title: 'The Center for Internet Security (CIS)',
+    },
+    {
+        id: '9',
         title: 'Sources',
     },
 ]
@@ -55,7 +65,7 @@ const sections = [
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
                     <p class="text-sm text-slate-400">Estimated reading time</p>
-                    <p class="mt-1 text-lg font-semibold">5 minutes</p>
+                    <p class="mt-1 text-lg font-semibold">12 minutes</p>
                 </div>
 
                 <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
@@ -140,7 +150,7 @@ const sections = [
                     </p>
                 </section>
 
-                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+                <section id="5" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         What are security controls frameworks?
                     </h2>
@@ -152,7 +162,66 @@ const sections = [
                     </p>
                 </section>
 
-                <section id="6" class="scroll-mt-24 py-10">
+                <section id="6" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        ISO 27002 
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        ISO 27002 not only supplements the security framework ISO 27001, it also has a list of controls for implementing an information security management system.
+                        It also has controls for managing risk. 
+                    </p>
+                </section>
+
+                <section id="7" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Secure Controls Framework (SCF)
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        The SCF is a list of about 750 catalogued controls that allows businesses to create and maintain secure processes and systems.
+                        Designed by information security and privacy professionals, it provides controls suitable for both cybersecurity and privacy, and covers 32 domains such as asset management, cloud security and more. 
+                        The controls listed also may not involve technology.
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        Moreover, it is free to view and implement and can be customised to the business's needs. 
+                        It also contains questions for performing a maturity assessment. 
+                        However, this framework requires an information security professional to apply the controls. 
+                    </p>
+                </section>
+
+                <section id="8" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        The Center for Internet Security (CIS)
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        Contains practical resources such as 
+                    </p>
+
+                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                        <li>CIS Controls</li>
+                        <li>CIS Benchmarks</li>
+                        <li>CIS Hardened Images</li>
+                    </ul>
+
+                    <p class="mb-4 text-slate-300">
+                        The CIS Controls are a list of 20 controls that should be prioritised, and are based on the best defences against common attacks. 
+                        However, it is best used when it is customised to the business's priorities and which assets require the most security. 
+                        CIS also has a free risk assessment in CIS Risk Assessment Method (CIS RAM) to allow users to knows which controls to prioritise.
+                        The CIS Controls is not only free, but it also has many accessible educational resources for implementing them. 
+                        However, it only has technology controls and not a lot of information on how to map it to other controls frameworks. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        The benchmarks were created as a configuration guide for many devices, software and operating systems. 
+                        The hardended images referred to versions of an operating system were unused features are disabled. 
+                        These are available for deployment in AWS, Google Cloud, Azure and Oracle Cloud. 
+                    </p>
+                </section>
+
+                <section id="9" class="scroll-mt-24 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         Sources
                     </h2>
@@ -172,16 +241,16 @@ const sections = [
                         Previous
                     </NuxtLink>
 
-                    <InfoSecSelect />
+                    <SelectInfoSec /> 
 
-                    <NuxtLink to="/courses/cybersec-intro/module2"
+                    <NuxtLink to="/courses/infosec-mgmt/module2"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
                         Next
                     </NuxtLink>
                 </div>
             </article>
 
-            <CourseSidebar :sections="sections" />
+            <CoursesSidebar :sections="sections" />
         </section>
     </main>
 </template>

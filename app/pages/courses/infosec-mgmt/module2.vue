@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import InfoSecSelect from '~/components/selects/InfoSecSelect.vue';
-
 const sections = [
     {
         id: '0',
@@ -146,21 +144,21 @@ const sections = [
                 </section>
 
                 <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
-                    <NuxtLink
+                    <NuxtLink to="/courses/infosec-mgmt/module1"
                         class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
                         Previous
                     </NuxtLink>
 
-                    <InfoSecSelect /> 
+                    <SelectInfoSec /> 
 
-                    <NuxtLink to="/courses/cybersec-intro/module2"
+                    <NuxtLink to="/courses/infosec-mgmt/module3"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
                         Next
                     </NuxtLink>
                 </div>
             </article>
 
-            <CourseSidebar :sections="sections" />
+            <CoursesSidebar :sections="sections" />
         </section>
     </main>
 </template>

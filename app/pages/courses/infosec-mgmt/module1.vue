@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import InfoSecSelect from '~/components/selects/InfoSecSelect.vue';
-
 const sections = [
   {
     id: '0',
@@ -266,7 +264,7 @@ const sections = [
             Previous
           </NuxtLink>
 
-          <InfoSecSelect /> 
+          <SelectInfoSec /> 
 
           <NuxtLink to="/courses/infosec-mgmt/module2"
             class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
@@ -275,7 +273,7 @@ const sections = [
         </div>
       </article>
 
-      <CourseSidebar :sections="sections" />
+      <CoursesSidebar :sections="sections" />
     </section>
   </main>
 </template>

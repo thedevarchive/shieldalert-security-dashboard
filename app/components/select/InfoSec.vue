@@ -9,12 +9,12 @@ const modules = [
     path: '/courses/infosec-mgmt/module2',
   },
   {
-    title: 'Security Management Frameworks and Controls Management',
+    title: 'Security Management Frameworks',
     path: '/courses/infosec-mgmt/module3',
   },
 ]
 </script>
 
 <template>
-  <ModuleSelect :modules="modules" />
+  <CoursesSelect :modules="modules" />
 </template>
