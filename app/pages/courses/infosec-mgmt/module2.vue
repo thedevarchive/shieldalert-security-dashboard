@@ -13,7 +13,7 @@ const sections = [
         title: 'Types of passive attacks',
     },
     {
-        id: '2',
+        id: '3',
         title: 'Types of active attacks',
     },
     {
@@ -84,6 +84,26 @@ const sections = [
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         Types of passive attacks 
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        According to Liu, eavesdropping is listening to other people's conversations without their consent, and information is gathered from either the content or the people involved in the conversation.
+                        Wiretapping is the act of eavesdropping over a telephone network, and is harder to detect in wireless networks. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        Shoulder surfing is like eavesdropping but done with observation instead of listening; this is the act of looking at others' screens without consent. 
+                        Attackers who commit shoulder surfing attempt to gain access to credentials such as a user's PIN or password, but could be use for other types of data such as a user's personal details. 
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        Network monitoring is when attackers tap into the network to gain knowledge of confidential information. 
+                    </p>
+                </section>
+
+                <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Types of active attacks 
                     </h2>
 
                     <p class="mb-4 text-slate-300">
