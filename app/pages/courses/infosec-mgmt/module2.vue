@@ -2,15 +2,15 @@
 const sections = [
     {
         id: '0',
-        title: 'What is risk?',
+        title: 'Security incidents and attacks',
     },
     {
         id: '1',
-        title: 'Creating risk statements',
+        title: 'Attack types',
     },
     {
         id: '2',
-        title: 'Communicating risks',
+        title: '',
     },
     {
         id: '5',
@@ -32,11 +32,11 @@ const sections = [
                 </p>
 
                 <h1 class="mb-4 text-4xl font-bold">
-                    Risk Management
+                    Security Incidents and Attacks 
                 </h1>
 
                 <p class="mb-8 text-slate-300">
-                    Learn what risk is, how to express risk to others and how to make risk statements.
+                    Learn about the different types of cyberattacks. 
                 </p>
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -46,80 +46,29 @@ const sections = [
 
                 <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        What is risk?
+                        Security incidents and attacks 
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        Risk in information security refers to the possibility of a threat will take advantage of a
-                        vulnerability of certain information and compromise an organisation.
-                    </p>
-
-                    <p class="text-slate-300">
-                        According to Rhodes, risk is best managed when involving all parties who should be concerned
-                        about it. It must also support the organisation's goals.
-                        It is also crucial for all parties involved to have a clear risk appetite, risk acceptance
-                        criteria and risk owners who can take accountability.
+                        A security incident happens when a threat exploits a vulnerability and information assets are impacted in the process.
+                        Security incidents become considered "attacks" when human action is the cause. 
+                        Attackers are people who intentionally exploit vulnerabilities gain access to the assets in question. 
+                        A security incident or attack is damaging if at least one of the security goals of an information asset is violated. 
                     </p>
                 </section>
 
                 <section id="1" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Creating risk statements
+                        Attack types
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        According to Rhodes, the risk statement briefly explains the risk to stakeholders. It must
-                        convey the incident
-                        that is likely to happen, the consequence that will happen when security is compromised and the
-                        impact it will have to the stakeholders or business.
                     </p>
-
-                    <p class="mb-4 text-slate-300">
-                        One simple format could look like this:
-                    </p>
-
-                    <p class="mb-4 text-slate-300">
-                        <strong>There is a risk that [event/incident] occurs leading to [consequence] that causes
-                            [impact].</strong>
-                    </p>
-
-                    <p class="mb-4 text-slate-300">
-                        If-then statements can also be used to express the risk to stakeholders, risk owners and other
-                        affected parties.
-                    </p>
-
-                    <p class="mb-4 text-slate-300">
-                        Here are some examples:
-                    </p>
-
-                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
-                        <li>If the server is infected, then an outage is likely to occur. Any outage will result in $500
-                            of lost sales for every 15 minutes of downtime. </li>
-                        <li>There is a risk that a staff member will click on a malicious link in an email message
-                            leading to the installation of malicious software that causes the computer system to be
-                            unavailable to users.</li>
-                    </ul>
                 </section>
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Communicating risks
                     </h2>
-
-                    <p class="mb-4 text-slate-300">
-                        The stakeholders may not always be someone in IT or an information security professional, so the
-                        risk must be communicated through language the stakeholders understand. Different people also
-                        value different aspects of the business or the information.
-                    </p>
-
-                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
-                        <li>Technology managers may care about things like system availability measured in percentages.
-                        </li>
-                        <li>Business managers may care about the number of transactions completed successfully per hour.
-                        </li>
-                        <li>Executive managers care about market share which they could measure in their own metrics.
-                        </li>
-                    </ul>
                 </section>
 
                 <section id="5" class="scroll-mt-24 py-10">

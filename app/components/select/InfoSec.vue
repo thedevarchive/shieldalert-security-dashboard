@@ -5,12 +5,16 @@ const modules = [
     path: '/courses/infosec-mgmt/module1',
   },
   {
-    title: 'Risk Statements',
+    title: 'Security Incidents and Attacks',
     path: '/courses/infosec-mgmt/module2',
   },
   {
-    title: 'Security Management Frameworks',
+    title: 'Risk Statements',
     path: '/courses/infosec-mgmt/module3',
+  },
+  {
+    title: 'Security Management Frameworks',
+    path: '/courses/infosec-mgmt/module4',
   },
 ]
 </script>
