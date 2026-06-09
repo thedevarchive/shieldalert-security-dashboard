@@ -10,7 +10,11 @@ const sections = [
     },
     {
         id: '2',
-        title: '',
+        title: 'Types of passive attacks',
+    },
+    {
+        id: '2',
+        title: 'Types of active attacks',
     },
     {
         id: '5',
@@ -32,11 +36,11 @@ const sections = [
                 </p>
 
                 <h1 class="mb-4 text-4xl font-bold">
-                    Security Incidents and Attacks 
+                    Security Incidents and Attacks
                 </h1>
 
                 <p class="mb-8 text-slate-300">
-                    Learn about the different types of cyberattacks. 
+                    Learn about the different types of cyberattacks.
                 </p>
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -46,14 +50,17 @@ const sections = [
 
                 <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Security incidents and attacks 
+                        Security incidents and attacks
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        A security incident happens when a threat exploits a vulnerability and information assets are impacted in the process.
-                        Security incidents become considered "attacks" when human action is the cause. 
-                        Attackers are people who intentionally exploit vulnerabilities gain access to the assets in question. 
-                        A security incident or attack is damaging if at least one of the security goals of an information asset is violated. 
+                        A security incident happens when a threat exploits a vulnerability and information assets are
+                        impacted in the process.
+                        Security incidents become considered "attacks" when human action is the cause.
+                        Attackers are people who intentionally exploit vulnerabilities gain access to the assets in
+                        question.
+                        A security incident or attack is damaging if at least one of the security goals of an
+                        information asset is violated.
                     </p>
                 </section>
 
@@ -63,12 +70,24 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        There are two kinds of attacks: passive and active.
+                    </p>
+
+                    <p class="mb-4 text-slate-300">
+                        In a passive attack, the attacker does not alter the asset, they only view or listen to the
+                        asset.
+                        Thus, it is hard to identify if this incident has occurred, and the most common security goal violated by this attack is confidentiality. 
+                        Attackers commit an active attack when they modify, falsify or copy the information that they are not meant to access. 
                     </p>
                 </section>
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        Types of passive attacks 
                     </h2>
+
+                    <p class="mb-4 text-slate-300">
+                    </p>
                 </section>
 
                 <section id="5" class="scroll-mt-24 py-10">
@@ -78,15 +97,8 @@ const sections = [
 
                     <div class="space-y-3">
                         <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            <a class="text-cyan-400" href="https://www.iso.org/standard/73906.html">International
-                                Organization for Standardization.</a> (2018).
-                            ISO/IEC 27000:2018 Information technology — Security techniques —
-                            Information security management systems — Overview and vocabulary.
-                        </div>
-
-                        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Organisational Risk
-                                Management.</em> [Presentation]. <a class="text-cyan-400"
+                            Liu, V. (2023). <em>IFN553 Introduction to Security and Networking: How Things Go Wrong,
+                                Part B: Security Incidents and Attacks</em> [Presentation]. <a class="text-cyan-400"
                                 href="https://www.canvas.qut.edu.au/">Canvas.</a>
                         </div>
                     </div>
@@ -98,7 +110,7 @@ const sections = [
                         Previous
                     </NuxtLink>
 
-                    <SelectInfoSec /> 
+                    <SelectInfoSec />
 
                     <NuxtLink to="/courses/infosec-mgmt/module3"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
