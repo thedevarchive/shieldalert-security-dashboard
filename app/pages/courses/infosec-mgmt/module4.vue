@@ -60,7 +60,7 @@ const sections = [
                 </h1>
 
                 <p class="mb-8 text-slate-300">
-                    Learn about the different security management frameworks.
+                    Learn about the different security management frameworks and controls frameworks.
                 </p>
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -243,7 +243,7 @@ const sections = [
 
                     <SelectInfoSec /> 
 
-                    <NuxtLink to="/courses/infosec-mgmt/module2"
+                    <NuxtLink to="/courses/infosec-mgmt/module5"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
                         Next
                     </NuxtLink>
