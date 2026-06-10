@@ -4,7 +4,7 @@ import { ShieldCog } from '@lucide/vue';
 
 <template>
   <nav class="relative z-50 border-b border-slate-800 bg-slate-950 text-white">
-    <div class="flex max-w-6xl items-center justify-between px-6 py-4">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
       <NuxtLink to="/" class="text-xl font-bold">
         <div class="flex items-center text-cyan-400">
           <ShieldCog class="h-10 w-10 mx-1" />
