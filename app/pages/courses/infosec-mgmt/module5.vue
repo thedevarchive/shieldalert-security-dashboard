@@ -91,9 +91,12 @@ const sections = [
 
                 <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        Common Vulnerabilities and Exposures (CVE)
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        Created and maintained by MITRE, this is a public list of cybersecurity vulnerabilities. 
+                        They also set the standards for naming the software vulnerabilities. 
                     </p>
                 </section>
 
