@@ -10,14 +10,18 @@ const sections = [
     },
     {
         id: '2',
-        title: 'Common Vulnerability Scoring System (CVSS)',
+        title: 'The vulnerability management process',
     },
     {
         id: '3',
-        title: 'Common Vulnerabilities and Exposures (CVE)',
+        title: 'Common Vulnerability Scoring System (CVSS)',
     },
     {
         id: '4',
+        title: 'Common Vulnerabilities and Exposures (CVE)',
+    },
+    {
+        id: '5',
         title: 'The US National Vulnerability Database (NVD)',
     },
     {
@@ -79,6 +83,20 @@ const sections = [
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        The vulnerability management process
+                    </h2>
+
+                    <ol class="mb-4 space-y-3 pl-6 text-slate-300">
+                        <li>Maintaining an asset inventory (both hardware and software)</li>
+                        <li>Establishing secure configurations</li>
+                        <li>Maintaining awareness of new vulnerabilties and detecting them</li>
+                        <li>Mitigating and remediating identified vulnerabilities</li>
+                        <li>Continuously monitorign the organisation's environment</li>
+                    </ol>
+                </section>
+
+                <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
                         Common Vulnerability Scoring System (CVSS)
                     </h2>
 
@@ -89,7 +107,7 @@ const sections = [
                     </p>
                 </section>
 
-                <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
+                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         Common Vulnerabilities and Exposures (CVE)
                     </h2>
@@ -100,7 +118,7 @@ const sections = [
                     </p>
                 </section>
 
-                <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
+                <section id="5" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         The US National Vulnerability Database (NVD)
                     </h2>
