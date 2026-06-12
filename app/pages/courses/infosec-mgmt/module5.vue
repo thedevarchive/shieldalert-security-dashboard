@@ -14,11 +14,11 @@ const sections = [
     },
     {
         id: '3',
-        title: '',
+        title: 'Common Vulnerabilities and Exposures (CVE)',
     },
     {
         id: '4',
-        title: '',
+        title: 'The US National Vulnerability Database (NVD)',
     },
     {
         id: '9',
@@ -44,7 +44,7 @@ const sections = [
                 </h1>
 
                 <p class="mb-8 text-slate-300">
-                    Learn about vulnerability management. 
+                    Learn about vulnerability management and some resources that ranks and lists these vulnerabilities. 
                 </p>
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -102,9 +102,12 @@ const sections = [
 
                 <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        The US National Vulnerability Database (NVD)
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        This database is created by NIST and contains CVE-identified software vulnerabilities. 
+                        It also has advanced search features that allow users to search by product name, version and even search by vulnerability type and severity. 
                     </p>
                 </section>
 
