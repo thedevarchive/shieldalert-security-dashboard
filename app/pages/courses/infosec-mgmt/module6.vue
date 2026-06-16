@@ -2,27 +2,27 @@
 const sections = [
     {
         id: '0',
-        title: 'What is vulnerability management?',
+        title: '',
     },
     {
         id: '1',
-        title: 'Common information security vulnerabilities',
+        title: '',
     },
     {
         id: '2',
-        title: 'The vulnerability management process',
+        title: '',
     },
     {
         id: '3',
-        title: 'Common Vulnerability Scoring System (CVSS)',
+        title: '',
     },
     {
         id: '4',
-        title: 'Common Vulnerabilities and Exposures (CVE)',
+        title: '',
     },
     {
         id: '5',
-        title: 'The US National Vulnerability Database (NVD)',
+        title: '',
     },
     {
         id: '9',
@@ -40,15 +40,15 @@ const sections = [
                 </NuxtLink>
 
                 <p class="mb-2 font-semibold text-cyan-400">
-                    Information Security Management: Module 5
+                    Information Security Management: Module 6
                 </p>
 
                 <h1 class="mb-4 text-4xl font-bold">
-                    Vulnerability Management
+                    Penetration Testing
                 </h1>
 
                 <p class="mb-8 text-slate-300">
-                    Learn about vulnerability management and some resources that ranks and lists these vulnerabilities. 
+                    Learn the concepts and fundamentals of pen testing.
                 </p>
 
                 <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -58,27 +58,46 @@ const sections = [
 
                 <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        What is vulnerability management?
+                        What is penetration testing?
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        According to Rhodes, vulnerability management is a thorough process in order to continuously maintain an organisation's vulnerabilities. 
-                        It is important because reducing vulnerabilities is the best way to lower risk and mitigate chances of attackers exploiting the system.  
+                        Penetration testing, simply known as pen testing, is a manually executed, offensive
+                        cybersecurity test conducted
+                        by an organisation to identify existing vulnerabilities and flaws in a information system's
+                        security.
+                        This is done so that the existing security's threat detection and response can be improved.
+                        They are also a point-in-time assessment, so they only identify vulnerabilities when the test is
+                        conducted.
                     </p>
                 </section>
 
                 <section id="1" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Common information security vulnerabilities
+                        Types of pen testing
                     </h2>
 
-                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
-                        <li>Flaws in the design and testing of technology</li>
-                        <li>Poor implementation of hardware or software</li>
-                        <li>Lack of rules or gaps in business policies or processes</li>
-                        <li>Lack of user training and awareness</li>
-                        <li>Physical or environmental factors</li>
-                    </ul>
+                    <p class="mb-4 text-slate-300">
+                        In <strong>whitebox testing</strong>, the conductors of the test have complete information of
+                        the system. It is often conducted to validate how effective a control is against threats and
+                        vulnerabilties.
+                    </p>
+                    <p class="mb-4 text-slate-300">
+                        In <strong>blackbox testing</strong>, the conductors of the test do not know what the system
+                        does. It is often used to simulate actual cyberattacks. However, this method may not allow all
+                        vulnerabilities to be identified in the test.
+                    </p>
+                    <p class="mb-4 text-slate-300">
+                        One reason why these tests are conducted is to identify vulnerabilities in a niche web or mobile
+                        application.
+                        The findings should also supply essential feedback to improve developers' coding practices.
+                        Another one could be to conduct scenario-driven testing to identify vulnerabilities that could
+                        emerge from it. Simulating such tests with actual incident data can be useful to inform
+                        scenarios and prepare the system for a similar situation.
+                        It could also be done to test incident detection and response times, which can be performed with
+                        responders being aware of what will happen or as tests where responders will not know how the
+                        system's security will be attacked.
+                    </p>
                 </section>
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
@@ -101,9 +120,11 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        This framework was created by the non-profit organisation Forum of Incident Response and Security Teams (FIRST) to characterise and classifies these vulnerabilities.
-                        The system has two sets of base metrics: exploitability and impact. However, the CVSS base impacts do not consider organisational impact.  
-                        The results of the scoring system ranges from 0 to 10. 
+                        This framework was created by the non-profit organisation Forum of Incident Response and
+                        Security Teams (FIRST) to characterise and classifies these vulnerabilities.
+                        The system has two sets of base metrics: exploitability and impact. However, the CVSS base
+                        impacts do not consider organisational impact.
+                        The results of the scoring system ranges from 0 to 10.
                     </p>
                 </section>
 
@@ -113,8 +134,8 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        Created and maintained by MITRE, this is a public list of cybersecurity vulnerabilities. 
-                        They also set the standards for naming the software vulnerabilities. 
+                        Created and maintained by MITRE, this is a public list of cybersecurity vulnerabilities.
+                        They also set the standards for naming the software vulnerabilities.
                     </p>
                 </section>
 
@@ -124,8 +145,9 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        This database is created by NIST and contains CVE-identified software vulnerabilities. 
-                        It also has advanced search features that allow users to search by product name, version and even search by vulnerability type and severity. 
+                        This database is created by NIST and contains CVE-identified software vulnerabilities.
+                        It also has advanced search features that allow users to search by product name, version and
+                        even search by vulnerability type and severity.
                     </p>
                 </section>
 
@@ -136,7 +158,8 @@ const sections = [
 
                     <div class="space-y-3">
                         <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Vulnerability Management.</em> [Presentation]. <a class="text-cyan-400"
+                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Vulnerability
+                                Management.</em> [Presentation]. <a class="text-cyan-400"
                                 href="https://www.canvas.qut.edu.au/">Canvas.</a>
                         </div>
                     </div>
@@ -148,7 +171,7 @@ const sections = [
                         Previous
                     </NuxtLink>
 
-                    <SelectInfoSec /> 
+                    <SelectInfoSec />
 
                     <NuxtLink to="/courses/infosec-mgmt/module6"
                         class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">

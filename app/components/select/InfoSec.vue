@@ -16,6 +16,14 @@ const modules = [
     title: 'Security Management Frameworks',
     path: '/courses/infosec-mgmt/module4',
   },
+  {
+    title: 'Vulnerability Management',
+    path: '/courses/infosec-mgmt/module5',
+  },
+  {
+    title: 'Penetration Testing',
+    path: '/courses/infosec-mgmt/module6',
+  },
 ]
 </script>
 
