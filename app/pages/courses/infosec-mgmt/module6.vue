@@ -102,52 +102,33 @@ const sections = [
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        The vulnerability management process
                     </h2>
 
-                    <ol class="mb-4 space-y-3 pl-6 text-slate-300">
-                        <li>Maintaining an asset inventory (both hardware and software)</li>
-                        <li>Establishing secure configurations</li>
-                        <li>Maintaining awareness of new vulnerabilties and detecting them</li>
-                        <li>Mitigating and remediating identified vulnerabilities</li>
-                        <li>Continuously monitorign the organisation's environment</li>
-                    </ol>
+                    <p class="mb-4 text-slate-300">
+                    </p>
                 </section>
 
                 <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Common Vulnerability Scoring System (CVSS)
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        This framework was created by the non-profit organisation Forum of Incident Response and
-                        Security Teams (FIRST) to characterise and classifies these vulnerabilities.
-                        The system has two sets of base metrics: exploitability and impact. However, the CVSS base
-                        impacts do not consider organisational impact.
-                        The results of the scoring system ranges from 0 to 10.
                     </p>
                 </section>
 
                 <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Common Vulnerabilities and Exposures (CVE)
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        Created and maintained by MITRE, this is a public list of cybersecurity vulnerabilities.
-                        They also set the standards for naming the software vulnerabilities.
                     </p>
                 </section>
 
                 <section id="5" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        The US National Vulnerability Database (NVD)
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        This database is created by NIST and contains CVE-identified software vulnerabilities.
-                        It also has advanced search features that allow users to search by product name, version and
-                        even search by vulnerability type and severity.
                     </p>
                 </section>
 

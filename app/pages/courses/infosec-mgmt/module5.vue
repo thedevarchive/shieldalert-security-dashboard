@@ -86,7 +86,7 @@ const sections = [
                         The vulnerability management process
                     </h2>
 
-                    <ol class="mb-4 space-y-3 pl-6 text-slate-300">
+                    <ol class="mb-4 list-decimal space-y-3 pl-6 text-slate-300">
                         <li>Maintaining an asset inventory (both hardware and software)</li>
                         <li>Establishing secure configurations</li>
                         <li>Maintaining awareness of new vulnerabilties and detecting them</li>
