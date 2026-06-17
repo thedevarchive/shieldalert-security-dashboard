@@ -91,7 +91,7 @@ const sections = [
                         <li>Establishing secure configurations</li>
                         <li>Maintaining awareness of new vulnerabilties and detecting them</li>
                         <li>Mitigating and remediating identified vulnerabilities</li>
-                        <li>Continuously monitorign the organisation's environment</li>
+                        <li>Continuously monitoring the organisation's environment</li>
                     </ol>
                 </section>
 
