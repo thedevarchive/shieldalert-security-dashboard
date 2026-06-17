@@ -116,9 +116,12 @@ const sections = [
 
                 <section id="3" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        Initial engagement
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        According to Rhodes, the conductors of the test must have the right skills and have the proper experience to execute it. 
+                        The requirements and the context of the test have to clearly specified, especially for uncommon or complex systems like SAP. 
                     </p>
                 </section>
 
