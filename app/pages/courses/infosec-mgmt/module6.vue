@@ -102,7 +102,7 @@ const sections = [
 
                 <section id="2" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
-                        Typical pen testing steps 
+                        Typical pen testing steps
                     </h2>
 
                     <ol class="mb-4 list-decimal space-y-3 pl-6 text-slate-300">
@@ -120,16 +120,34 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        According to Rhodes, the conductors of the test must have the right skills and have the proper experience to execute it. 
-                        The requirements and the context of the test have to clearly specified, especially for uncommon or complex systems like SAP. 
+                        According to Rhodes, the conductors of the test must have the right skills and have the proper
+                        experience to execute it.
+                        The requirements and the context of the test have to clearly specified, especially for uncommon
+                        or complex systems like SAP.
                     </p>
                 </section>
 
                 <section id="4" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        Scoping
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        In this step, all stakeholders involved need to be identified. This includes risk owners,
+                        service owners, technical staff and at least one person who can conduct the pen test.
+                    </p>
+                    <p class="mb-4 text-slate-300">
+                        Each participant must contribute to the scope discussion.
+                    </p>
+                    <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                        <li>Risk and service owners should highlight areas of concern</li>
+                        <li>Technical staff should outline the technical boundaries of the system to be tested</li>
+                        <li>The pen test team should identify the type of testing to use to get a complete idea of the
+                            vulnerability of the target</li>
+                    </ol>
+                    <p class="mb-4 text-slate-300">
+                        Specific times when testing should happen and systems excluded from testing should be addressed and confirmed.
+                        Systems that have to be tested in a particular way should also be addressed. 
                     </p>
                 </section>
 
