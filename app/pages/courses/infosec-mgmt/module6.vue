@@ -165,10 +165,19 @@ const sections = [
 
                 <section id="5" class="scroll-mt-24 border-b border-slate-800 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
+                        Testing
                     </h2>
 
                     <p class="mb-4 text-slate-300">
+                        This is the stage where testing is executed by the team. There are some important aspects to take note of while testing.
                     </p>
+
+                    <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                        <li>The pen test team and the client should remain in communication, in case testing goes wrong and affects other systems</li>
+                        <li>Test team should know how to escalate critical issues</li>
+                        <li>Barriers to effective testing must be reported and resolved as soon as possible</li>
+                        <li>Changes in scope should be acknowledged by all parties, and these changes should be resolved and recorded</li>
+                    </ol>
                 </section>
 
                 <section id="9" class="scroll-mt-24 py-10">
