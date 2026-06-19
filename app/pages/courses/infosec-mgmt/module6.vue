@@ -146,9 +146,21 @@ const sections = [
                             vulnerability of the target</li>
                     </ol>
                     <p class="mb-4 text-slate-300">
-                        Specific times when testing should happen and systems excluded from testing should be addressed and confirmed.
-                        Systems that have to be tested in a particular way should also be addressed. 
+                        Specific times when testing should happen and systems excluded from testing should be addressed
+                        and confirmed.
+                        Systems that have to be tested in a particular way should also be addressed.
                     </p>
+                    <p class="mb-4 text-slate-300">
+                        The discussion must produce an output in the form of an engagement plan, which should include
+                    </p>
+                    <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                        <li>Boundaries of testing, both technical and physical</li>
+                        <li>Types of testing that will be conducted</li>
+                        <li>Time frame and time constraints on testing and reporting</li>
+                        <li>Needs of the pen test team</li>
+                        <li>Compliance requirements</li>
+                        <li>Reporting requirements</li>
+                    </ol>
                 </section>
 
                 <section id="5" class="scroll-mt-24 border-b border-slate-800 py-10">
