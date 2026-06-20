@@ -14,19 +14,23 @@ const sections = [
     },
     {
         id: '3',
-        title: '',
+        title: 'Initial engagement',
     },
     {
         id: '4',
-        title: '',
+        title: 'Scoping',
     },
     {
         id: '5',
-        title: '',
+        title: 'Testing',
     },
     {
         id: '6',
-        title: '',
+        title: 'Reporting',
+    },
+    {
+        id: '7',
+        title: 'Following up',
     },
     {
         id: '9',
