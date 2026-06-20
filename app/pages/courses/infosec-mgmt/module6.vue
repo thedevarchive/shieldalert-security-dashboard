@@ -173,14 +173,17 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        This is the stage where testing is executed by the team. There are some important aspects to take note of while testing.
+                        This is the stage where testing is executed by the team. There are some important aspects to
+                        take note of while testing.
                     </p>
 
                     <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
-                        <li>The pen test team and the client should remain in communication, in case testing goes wrong and affects other systems</li>
+                        <li>The pen test team and the client should remain in communication, in case testing goes wrong
+                            and affects other systems</li>
                         <li>Test team should know how to escalate critical issues</li>
                         <li>Barriers to effective testing must be reported and resolved as soon as possible</li>
-                        <li>Changes in scope should be acknowledged by all parties, and these changes should be resolved and recorded</li>
+                        <li>Changes in scope should be acknowledged by all parties, and these changes should be resolved
+                            and recorded</li>
                     </ol>
                 </section>
 
@@ -190,9 +193,21 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        A draft is sent and reviewed by the most important stakeholders before a report is produced. 
-                        In this phase, the pen test team needs to be level-headed and diplomatic, so they should not blame people. 
-                        Collaboration and maintaining positivity is important to obtain the best results for the report. 
+                        A draft is sent and reviewed by the most important stakeholders before a report is produced.
+                        In this phase, the pen test team needs to be level-headed and diplomatic, so they should not
+                        blame people.
+                        Collaboration and maintaining positivity is important to obtain the best results for the report.
+                    </p>
+                </section>
+
+                <section id="7" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Following up
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        The pen test report is required to analysed so that it aligns with the organisational context, 
+                        the organisation's objectives and the business' impacts. Afterwards, treatment plans can be creted based on these findings. 
                     </p>
                 </section>
 
