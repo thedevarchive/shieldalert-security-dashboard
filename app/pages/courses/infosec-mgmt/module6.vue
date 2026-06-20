@@ -25,6 +25,10 @@ const sections = [
         title: '',
     },
     {
+        id: '6',
+        title: '',
+    },
+    {
         id: '9',
         title: 'Sources',
     },
@@ -178,6 +182,18 @@ const sections = [
                         <li>Barriers to effective testing must be reported and resolved as soon as possible</li>
                         <li>Changes in scope should be acknowledged by all parties, and these changes should be resolved and recorded</li>
                     </ol>
+                </section>
+
+                <section id="6" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Reporting
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        A draft is sent and reviewed by the most important stakeholders before a report is produced. 
+                        In this phase, the pen test team needs to be level-headed and diplomatic, so they should not blame people. 
+                        Collaboration and maintaining positivity is important to obtain the best results for the report. 
+                    </p>
                 </section>
 
                 <section id="9" class="scroll-mt-24 py-10">
