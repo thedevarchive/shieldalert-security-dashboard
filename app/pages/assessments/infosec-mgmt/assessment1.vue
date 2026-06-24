@@ -185,10 +185,18 @@ let questions: Question[] = [
         correctAnswer: "",
         explanation: ""
     },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
 ]
 
-//TODO: adjust question limit 
-const maxQuestions = 10;
+//TODO: adjust question limit and pass percentage
+const maxQuestions = 10
+const passPercentage = 0.7
+const minCorrectAnswers = Math.round(maxQuestions * passPercentage)
 
 //shuffle questions 
 const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5)
