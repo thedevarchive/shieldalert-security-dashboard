@@ -144,22 +144,22 @@ let questions: Question[] = [
         explanation: "Non-repudiation refers to creating irrefutable proof that the activity occurred and the user has done it."
     },
     {
-        questionText: "Which of these is NOT a security control?",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "A law student hacked into the university's system to change their marks. In this situation, which security goal is compromised?",
+        choices: ["Confidentiality", "Integrity", "Availability", "None"],
+        correctAnswer: "Integrity",
+        explanation: "Integrity refers to preventing the modification of information, and since the student modified their marks to make them seem like they have better grades, integrity is violated."
     },
     {
-        questionText: "Why is information security essential?",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "A file that contained personal information and medical details of blood donors was posted on a public website. Which security goal was violated as a result?",
+        choices: ["Confidentiality", "Integrity", "Availability", "All three"],
+        correctAnswer: "Confidentiality",
+        explanation: "As information is disclosed to other users when the file containing personal details is published, confidentiality was compromised."
     },
     {
-        questionText: "Why is information security essential?",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Due to an outage, payment systems at self-service checkouts in grocery stores were unable to be used. Because of this, which security goal was violated?",
+        choices: ["Confidentiality", "Integrity", "Availability", "Authorisation"],
+        correctAnswer: "Availability",
+        explanation: "Because payment systems were not available for use due to the outage, the availability of those systems were tampered with."
     },
     {
         questionText: "Why is information security essential?",
