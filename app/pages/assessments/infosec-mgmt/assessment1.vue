@@ -37,22 +37,21 @@
             </div>
 
             <!-- User choices -->
-            <div v-if="!hasAnswered" class="mt-6 flex gap-3">
-                <button @click="answerQuestion('safe')"
-                    class="rounded-xl bg-emerald-500 px-5 py-3 font-medium text-white transition hover:bg-emerald-400">
-                    Looks safe
-                </button>
-
-                <button @click="answerQuestion('phishing')"
-                    class="rounded-xl bg-red-500 px-5 py-3 font-medium text-white transition hover:bg-red-400">
-                    Looks suspicious
+            <div v-if="!hasAnswered" class="mt-6 flex flex-col gap-3">
+                <button v-for="choice in currentChoices" @click="answerQuestion(choice)"
+                    class="rounded-xl bg-slate-500 px-5 py-3 font-medium text-white transition hover:bg-slate-400">
+                    {{ choice }}
                 </button>
             </div>
 
             <div v-else class="mt-6 rounded-xl border p-5"
                 :class="isCorrect ? 'border-emerald-500 bg-emerald-950/40' : 'border-red-500 bg-red-950/40'">
-                <p class="mb-2 text-lg font-semibold">
-                    {{ isCorrect ? 'Correct' : 'Not quite' }}
+                <p v-if="!isCorrect" class="mb-2 text-lg text-slate-300">
+                    You answered: <strong>{{ selectedAnswer }}</strong>
+                </p>
+
+                <p class="mb-2 text-lg text-slate-300">
+                    Correct answer: <strong>{{ currentQuestion?.correctAnswer }}</strong>
                 </p>
 
                 <p class="mb-4 text-sm text-slate-300">
@@ -127,7 +126,7 @@ let questions: Question[] = [
     },
     {
         questionText: "Which of these is NOT an additional goal for establishing security?",
-        choices: ["Avalability", "Authentication", "Accountability", "Authorisation"],
+        choices: ["Availability", "Authentication", "Accountability", "Authorisation"],
         correctAnswer: "Availability",
         explanation: "Availability is a necessary security goal. Authentication, accountability and authorisation are considered additional security goals."
     },
@@ -147,7 +146,7 @@ let questions: Question[] = [
         questionText: "A law student hacked into the university's system to change their marks. In this situation, which security goal is compromised?",
         choices: ["Confidentiality", "Integrity", "Availability", "None"],
         correctAnswer: "Integrity",
-        explanation: "Integrity refers to preventing the modification of information, and since the student modified their marks to make them seem like they have better grades, integrity is violated."
+        explanation: "Since the student gained unauthorised access to the system to modify their grades, integrity is violated."
     },
     {
         questionText: "A file that contained personal information and medical details of blood donors was posted on a public website. Which security goal was violated as a result?",
@@ -156,10 +155,10 @@ let questions: Question[] = [
         explanation: "As information is disclosed to other users when the file containing personal details is published, confidentiality was compromised."
     },
     {
-        questionText: "Due to an outage, payment systems at self-service checkouts in grocery stores were unable to be used. Because of this, which security goal was violated?",
+        questionText: "Due to an outage, payment systems at self-service checkouts in some retail stores were unable to be used. Because of this, which security goal was violated?",
         choices: ["Confidentiality", "Integrity", "Availability", "Authorisation"],
         correctAnswer: "Availability",
-        explanation: "Because payment systems were not available for use due to the outage, the availability of those systems were tampered with."
+        explanation: "Because payment systems were not available due to the outage, the availability of those systems were tampered with."
     },
     {
         questionText: "Why is information security essential?",
@@ -208,6 +207,12 @@ const score = ref(0) // get user's score
 const quizFinished = ref(false) //check if quiz is finished
 
 const currentQuestion = computed(() => questions[currentQuestionIndex.value]) //get current question
+
+//shuffle choices in currentQuestion and put it in a ref 
+const currentChoices = computed(() => {
+  return [...(currentQuestion.value?.choices ?? [])]
+    .sort(() => Math.random() - 0.5)
+})
 
 const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered 
 
