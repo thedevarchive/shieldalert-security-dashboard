@@ -179,7 +179,59 @@ let questions: Question[] = [
         explanation: "Backup records and system restores bring back the compromised systems or access to information assets so these are corrective measures."
     },
     {
-        questionText: "Why is information security essential?",
+        questionText: "Which of these statements are incorrect?",
+        choices: [
+            "Passive attacks usually violate the security goal of accessibility.",
+            "Attackers commit an active attack when they modify, falsify or copy the information.",
+            "It is usually hard to detect passive attacks.",
+            "A security incident or attack is damaging if at least one of the security goals of an information asset is violated."
+        ],
+        correctAnswer: "Passive attacks usually violate the security goal of accessibility.",
+        explanation: "Passive attacks occur when an attacker gains access to information they are not meant to view or listen to. Since passive attacks happen when attacker does not modify the information asset the security goal they usually violate is confidentiality."
+    },
+    {
+        questionText: "What is the difference between passive and active attacks?",
+        choices: [
+            "Passive attacks happen when the attacker gains access to information they are not meant to access while active attacks happen attacker modifies, falsifies or destroys information.",
+            "Passive attacks prevent authorized users from accessing information, while active attacks secretly monitor communications.",
+            "Passive attacks encrypt information, while active attacks decrypt it without permission.",
+            "Passive attacks focus on stealing passwords, while active attacks focus on deleting files."
+        ],
+        correctAnswer: "Passive attacks happen when the attacker gains access to information they are not meant to access while active attacks happen attacker modifies, falsifies or destroys information.",
+        explanation: "Passive attacks involve observing or intercepting information without making any changes to it. Active attacks alter information or systems, often causing damage to the assets, files or systems. This makes the latter easier to detect."
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
         choices: [],
         correctAnswer: "",
         explanation: ""
@@ -240,8 +292,8 @@ const currentQuestion = computed(() => questions[currentQuestionIndex.value]) //
 
 //shuffle choices in currentQuestion and put it in a ref 
 const currentChoices = computed(() => {
-  return [...(currentQuestion.value?.choices ?? [])]
-    .sort(() => Math.random() - 0.5)
+    return [...(currentQuestion.value?.choices ?? [])]
+        .sort(() => Math.random() - 0.5)
 })
 
 const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered 
