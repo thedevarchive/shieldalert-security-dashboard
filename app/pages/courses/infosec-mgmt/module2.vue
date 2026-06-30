@@ -74,7 +74,7 @@ const sections = [
                     </p>
 
                     <p class="mb-4 text-slate-300">
-                        In a passive attack, the attacker does not alter the asset, they only view or listen to the
+                        In a passive attack, the attacker does not alter the asset. They only view or listen to the
                         asset.
                         Thus, it is hard to identify if this incident has occurred, and the most common security goal violated by this attack is confidentiality. 
                         Attackers commit an active attack when they modify, falsify or copy the information that they are not meant to access. 

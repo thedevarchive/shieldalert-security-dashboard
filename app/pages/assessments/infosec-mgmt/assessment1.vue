@@ -161,10 +161,22 @@ let questions: Question[] = [
         explanation: "Because payment systems were not available due to the outage, the availability of those systems were tampered with."
     },
     {
-        questionText: "Why is information security essential?",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Encryption, access controls and over-provisioning are examples of which kind of control measure?",
+        choices: ["Preventive", "Detective", "Corrective", "Confidentiality"],
+        correctAnswer: "Preventive",
+        explanation: "Encryption, access controls and over-provisioning are preventive controls as they prevent cyberattacks in some form."
+    },
+    {
+        questionText: "Monitoring and intrusion detection systems are examples of which kind of control measure?",
+        choices: ["Preventive", "Detective", "Corrective", "Monitoring"],
+        correctAnswer: "Detective",
+        explanation: "Both monitoring and intrusion detection systems check for unauthorised actions, therefore they are detective measures."
+    },
+    {
+        questionText: "Backup records and system restores are examples of which kind of control measure?",
+        choices: ["Preventive", "Detective", "Corrective", "Defective"],
+        correctAnswer: "Corrective",
+        explanation: "Backup records and system restores bring back the compromised systems or access to information assets so these are corrective measures."
     },
     {
         questionText: "Why is information security essential?",
@@ -173,13 +185,31 @@ let questions: Question[] = [
         explanation: ""
     },
     {
-        questionText: "Why is information security essential?",
+        questionText: "",
         choices: [],
         correctAnswer: "",
         explanation: ""
     },
     {
-        questionText: "Why is information security essential?",
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
         choices: [],
         correctAnswer: "",
         explanation: ""
