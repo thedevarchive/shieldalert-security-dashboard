@@ -157,7 +157,7 @@ const sections = [
                         even
                         input boxes, so that when a user interacts with the website, it downloads malware on the user's
                         machine.
-                        Another similar attack but involving databases is SQL injection. Malicious queries or SQL
+                        Another similar attack is SQL injection. Malicious queries or SQL
                         scripts are inserted in databases or inputs so that when the code runs, it alters the
                         information in the target database.
                     </p>

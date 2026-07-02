@@ -96,7 +96,7 @@ type Question = {
 }
 
 // First 12 questions: Module 1
-// Next ? questions: Module 2
+// Next 10 questions: Module 2
 // Next ? questions: Module 3
 // Next ? questions: Module 4
 // Next ? questions: Module 5
@@ -236,22 +236,32 @@ let questions: Question[] = [
         explanation: "Network monitoring is when attackers tap into the network to gain knowledge of confidential information."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these refer to an attack where attackers insert a script in a database in order to alter the information stored in it?",
+        choices: ["Man in the middle (MITM)", "Cross-site scripting (XSS)", "SQL injection", "Denial of service (DoS)"],
+        correctAnswer: "SQL injection",
+        explanation: "SQL injection is an attack that involves inserting malicious SQL scripts to alter information in a target database."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "What is a replay attack?",
+        choices: [
+            "An attack where an attacker secretly monitors network traffic to collect confidential information without modifying it", 
+            "An attack where an attacker intercepts a conversation and changes the messages before forwarding them to each party",
+            "An attack where an attacker replays multiple requests to make a server unavailable",
+            "An attack where an attacker records valid credentials in order to use that information later to gain access to a user's account or information they have access to."
+        ],
+        correctAnswer: "An attack where an attacker records valid credentials in order to use that information later to gain access to a user's account or information they have access to.",
+        explanation: "A replay attack happens when an attacker captures a legitimate transmission and retransmits it later to trick a system into accepting it as authentic."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these analogies are correct?",
+        choices: [
+            "Cross-site scripting : active attack ; Eavesdropping : passive attack",
+            "Active attack : network monitoring ; Passive attack : social engineering",
+            "Cross-site scripting : databases ; SQL injection : websites",
+            "Phishing : emails ; Pharming : telephone lines"
+        ],
+        correctAnswer: "Cross-site scripting : active attack ; Eavesdropping : passive attack",
+        explanation: "Cross-site scripting is an example of an active attack while eavesdropping is an example of a passive attack."
     },
     {
         questionText: "",
