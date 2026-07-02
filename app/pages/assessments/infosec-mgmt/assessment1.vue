@@ -201,40 +201,39 @@ let questions: Question[] = [
         explanation: "Passive attacks involve observing or intercepting information without making any changes to it. Active attacks alter information or systems, often causing damage to the assets, files or systems. This makes the latter easier to detect."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these is a passive attack?",
+        choices: ["Eavesdropping", "Distributed denial of service (DDoS)", "Spoofing", "Phishing"],
+        correctAnswer: "Eavesdropping",
+        explanation: "Eavesdropping happens when an attacker listens to other people's conversations without their consent. As no information is altered in this attack, this is a passive attack."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these is an active attack?",
+        choices: ["Wiretapping", "Shoulder surfing", "Network monitoring", "Denial of service (DoS)"],
+        correctAnswer: "Denial of service (DoS)",
+        explanation: "A denial of service (DoS) attack prevents authorised users from accessing the information that they have permission for. Even if information is not altered during the attack, it still tampers with the system's availability which is detectable, therefore DoS is an active attack."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these series of attacks are all active attacks?",
+        choices: [
+            "Man in the middle (MITM), replay attack, spoofing", 
+            "Pharming, phishing, cyberbullying", 
+            "Eavesdropping, shoulder surfing, network monitoring", 
+            "Distributed denial of service (DDoS), man in the middle (MITM), packet sniffing"
+        ],
+        correctAnswer: "Man in the middle (MITM), replay attack, spoofing",
+        explanation: "Man in the middle (MITM), replay attack and spoofing are all active attacks since they modify information in some way."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these refer to a cyberattack that combines spoofing and social engineering?",
+        choices: ["Phishing", "Pharming", "Spoofing", "Ransomware"],
+        correctAnswer: "Phishing",
+        explanation: "Phishing is a method that combines spoofing and social engineering. It involves the attacker starting communication with their victim while pretending to be an authorised entity."
     },
     {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
-    },
-    {
-        questionText: "",
-        choices: [],
-        correctAnswer: "",
-        explanation: ""
+        questionText: "Which of these refer to the attack that involves tapping into the network to gain knowledge of confidential information?",
+        choices: ["Network monitoring", "Networking", "Session hijacking", "Packet injection"],
+        correctAnswer: "Network monitoring",
+        explanation: "Network monitoring is when attackers tap into the network to gain knowledge of confidential information."
     },
     {
         questionText: "",
