@@ -297,59 +297,59 @@ let questions: Question[] = [
         explanation: "Risk statements do not detail every possible attack that could happen. It only conveys one possible incident, its consequences and the impact it will have on the business and affected parties."
     },
     {
-        questionText: "",
+        questionText: "Which of these statements are incorrect?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Security management frameworks are a set of software tools used to automatically detect and block all cybersecurity threats.",
+            "Security management frameworks are provide a structured management of information security for companies and organisations.",
+            "Security management frameworks offer a starting point for organisations that do not have information management or have a disorganised information management.",
+            "Security management frameworks are used to plan information security in the workplace."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Security management frameworks are a set of software tools used to automatically detect and block all cybersecurity threats.",
+        explanation: "Ssecurity management frameworks provide a structured management of information security for companies and organisations. They are not software tools but are a set of documents that provide a structure for how to manage attacks and risk."
     },
     {
-        questionText: "",
+        questionText: "Which of these frameworks contains the requirements for implementing an Information Security Management System (ISMS)?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "ISO 27001",
+            "NIST Cybersecurity Framework",
+            "Cloud Security Alliance Cloud Controls Matrix",
+            "Secure Controls Framework (SCF)"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "ISO 27001",
+        explanation: "ISO 27001 contains the requirements for implementing an Information Security Management Systems (ISMS). It aims to align risk management with the organisation's so it is suitable for any organisation."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT true about the NIST Cybersecurity Framework?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Because this framework was made by a government, the framework is only compatible with governments.",
+            "The NIST Framework is free to use.",
+            "It comes with special publications to allow the organisation to customise their own information security program.",
+            "The NIST Framework is frequently reviewed by industry professionals."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Because this framework was made by a government, the framework is only compatible with governments.",
+        explanation: "While the NIST Framework was made by the US Government, it is suitable for all kinds of industries."
     },
     {
-        questionText: "",
+        questionText: "Which of these is a disadvantage of ISO 27002?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "It does not cover technology-based controls.",
+            "It requires an information security professional to apply it.",
+            "It can only be used by organisations in the tech industry.",
+            "The framework is only updated once every 5 years."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "It requires an information security professional to apply it.",
+        explanation: "ISO 27002 requires an information security professional to apply it since implementation of the controls are difficult to understand."
     },
     {
-        questionText: "",
+        questionText: "Which of these is both a security management framework and a security controls framework?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "ISO 27001",
+            "IS0 27002",
+            "NIST Cybersecurity Framework",
+            "Secure Controls Framework (SCF)"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "ISO 27002",
+        explanation: "While it is mainly a security controls framework, ISO 27002 supports security management frameworks. In fact, it pairs well with ISO 27001, a security management framework."
     },
     {
         questionText: "",
