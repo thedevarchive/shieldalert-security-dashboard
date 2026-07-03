@@ -97,7 +97,7 @@ type Question = {
 
 // First 12 questions: Module 1
 // Next 10 questions: Module 2
-// Next ? questions: Module 3
+// Next 3 questions: Module 3
 // Next ? questions: Module 4
 // Next ? questions: Module 5
 // Last ? questions: Module 6
@@ -244,7 +244,7 @@ let questions: Question[] = [
     {
         questionText: "What is a replay attack?",
         choices: [
-            "An attack where an attacker secretly monitors network traffic to collect confidential information without modifying it", 
+            "An attack involving repeatedly guessing passwords until the correct one is found.", 
             "An attack where an attacker intercepts a conversation and changes the messages before forwarding them to each party",
             "An attack where an attacker replays multiple requests to make a server unavailable",
             "An attack where an attacker records valid credentials in order to use that information later to gain access to a user's account or information they have access to."
@@ -264,20 +264,266 @@ let questions: Question[] = [
         explanation: "Cross-site scripting is an example of an active attack while eavesdropping is an example of a passive attack."
     },
     {
+        questionText: "In information security, what is risk?",
+        choices: [
+            "The potential for loss or damage when a threat exploits a vulnerability", 
+            "A software flaw that allows unauthorised access",
+            "The possibility for loss of funds or other important assets",
+            "An event that always results in a security breach"
+        ],
+        correctAnswer: "The potential for loss or damage when a threat exploits a vulnerability",
+        explanation: "Risk is the possibility that a threat will exploit a vulnerability and cause harm to an organisation's information or systems. It considers both the likelihood of the event occurring and the potential impact if it does."
+    },
+    {
+        questionText: "In information security, how is risk best managed?",
+        choices: [
+            "By eliminating all vulnerabilities from the system",
+            "By avoiding the use of computers and the internet altogether",
+            "By ignoring low-risk threats until they become serious incidents",
+            "By involving all concerned parties and ensuring that it is managed according to the organisation's goals"
+        ],
+        correctAnswer: "By involving all concerned parties and ensuring that it is managed according to the organisation's goals",
+        explanation: "Risk is best managed when involving all parties who should be concerned about it. It must also support the organisation's goals. It is also crucial for all parties involved to have a clear risk appetite, risk acceptance criteria and risk owners who can take accountability."
+    },
+    {
+        questionText: "Which of these incorrectly describes a risk statement?",
+        choices: [
+            "A risk statement briefly explains risks to stakeholders.",
+            "A risk statement can use if-then statements.",
+            "A risk statement must convey the incident likely to happen, its consequences and the impact it will have to stakeholders or the business.",
+            "A risk statement records every cyberattack that has occurred in a system."
+        ],
+        correctAnswer: "A risk statement records every cyberattack that has occurred in a system.",
+        explanation: "Risk statements do not detail every possible attack that could happen. It only conveys one possible incident, its consequences and the impact it will have on the business and affected parties."
+    },
+    {
         questionText: "",
-        choices: [],
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
         correctAnswer: "",
         explanation: ""
     },
     {
         questionText: "",
-        choices: [],
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
         correctAnswer: "",
         explanation: ""
     },
     {
         questionText: "",
-        choices: [],
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
         correctAnswer: "",
         explanation: ""
     },
