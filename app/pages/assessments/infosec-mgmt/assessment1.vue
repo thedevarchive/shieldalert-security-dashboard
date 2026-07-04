@@ -352,15 +352,15 @@ let questions: Question[] = [
         explanation: "While it is mainly a security controls framework, ISO 27002 supports security management frameworks. In fact, it pairs well with ISO 27001, a security management framework."
     },
     {
-        questionText: "",
+        questionText: "Which of these best describes a Secure Controls Framework (SCF)?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "The SCF is a list of about 750 catalogued controls that allows businesses to create and maintain secure processes and systems.",
+            "The SCF is a controls management framework for cloud service providers.",
+            "The SCF was designed by the US Government and is free to use.",
+            "The SCF is often used in UK and Australia."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "The SCF is a list of about 750 catalogued controls that allows businesses to create and maintain secure processes and systems.",
+        explanation: "Designed by information security and privacy professionals, the SCF is a list of about 750 catalogued controls that allows businesses to create and maintain secure processes and systems."
     },
     {
         questionText: "",
