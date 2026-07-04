@@ -98,7 +98,7 @@ type Question = {
 // First 12 questions: Module 1
 // Next 10 questions: Module 2
 // Next 3 questions: Module 3
-// Next ? questions: Module 4
+// Next 6 questions: Module 4
 // Next ? questions: Module 5
 // Last ? questions: Module 6
 let questions: Question[] = [
@@ -361,6 +361,61 @@ let questions: Question[] = [
         ],
         correctAnswer: "The SCF is a list of about 750 catalogued controls that allows businesses to create and maintain secure processes and systems.",
         explanation: "Designed by information security and privacy professionals, the SCF is a list of about 750 catalogued controls that allows businesses to create and maintain secure processes and systems."
+    },
+    {
+        questionText: "Which of these kinds of documents are NOT created by CIS?",
+        choices: [
+            "Controls",
+            "Benchmarks",
+            "Hardened images",
+            "Security management"
+        ],
+        correctAnswer: "Security management",
+        explanation: "The Center for Internet Security (CIS) does not have a general security management framework, but it has created CIS Controls, CIS Benchmarks and CIS Hardened Images."
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
+    },
+    {
+        questionText: "",
+        choices: [
+            "",
+            "",
+            "",
+            ""
+        ],
+        correctAnswer: "",
+        explanation: ""
     },
     {
         questionText: "",
