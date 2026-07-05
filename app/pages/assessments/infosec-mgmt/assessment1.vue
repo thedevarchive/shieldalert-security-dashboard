@@ -374,26 +374,26 @@ let questions: Question[] = [
         explanation: "The Center for Internet Security (CIS) does not have a general security management framework, but it has created CIS Controls, CIS Benchmarks and CIS Hardened Images."
     },
     {
-        questionText: "",
+        questionText: "Why is vulnerability management important?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Reducing vulnerabilities is the best way to lower risk and mitigate chances of attackers exploiting the system.",
+            "It helps organisations identify and eliminate all threats before they can target a system.",
+            "Reducing attackers before vulnerabilities are discovered is the best way to lower risk.",
+            "It helps organisations identify vulnerabilities only after they have been exploited."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Reducing vulnerabilities is the best way to lower risk and mitigate chances of attackers exploiting the system.",
+        explanation: "Proactively reducing risk before they happen is the goal of vulnerability management. The main way risk is reducing risk is through reducing the vulnerabilities attackers can exploit."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT a common information security vulnerability?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Flaws in the design and testing of technology",
+            "Lack of rules or gaps in business policies or processes",
+            "Lack of user training and awareness",
+            "Lack of user experience and technical skills"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Lack of user experience and technical skills",
+        explanation: "A user's inexperience with information security or technical skills is not a common information security vulnerability. However, an organisation's lack of user training and user awareness on information security is."
     },
     {
         questionText: "",
