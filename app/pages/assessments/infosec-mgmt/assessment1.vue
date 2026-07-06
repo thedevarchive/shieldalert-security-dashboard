@@ -99,8 +99,8 @@ type Question = {
 // Next 10 questions: Module 2
 // Next 3 questions: Module 3
 // Next 6 questions: Module 4
-// Next ? questions: Module 5
-// Last ? questions: Module 6
+// Next 6 questions: Module 5
+// Last 6 questions: Module 6
 let questions: Question[] = [
     {
         questionText: "Why is information security essential?",
@@ -396,26 +396,26 @@ let questions: Question[] = [
         explanation: "A user's inexperience with information security or technical skills is not a common information security vulnerability. However, an organisation's lack of user training and user awareness on information security is."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT a vulnerability management process?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Maintaining asset inventories for hardware and software",
+            "Monitoring the organisation's environment continuously",
+            "Mitigating and remediating identified vulnerabilities",
+            "Maintaining backups of critical organisational information"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Maintaining backups of critical organisational information",
+        explanation: "Maintaining backups of critical organisational information is not a necessary step to fulfil, but the other choices are part of the process."
     },
     {
-        questionText: "",
+        questionText: "Which one of these refers to a public list of cybersecurity vulnerabilities?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Common Vulnerability Scoring System (CVSS)",
+            "Common Vulnerabilities and Exposures (CVE)",
+            "The US National Vulnerability Database (NVD)",
+            "National Institute of Standards and Technology (NIST)"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Common Vulnerabilities and Exposures (CVE)",
+        explanation: "The CVE is a public list of cybersecurity vulnerabilities created and maintained by MITRE."
     },
     {
         questionText: "",
