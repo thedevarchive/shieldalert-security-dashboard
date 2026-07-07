@@ -111,7 +111,8 @@ const sections = [
                     <p class="mb-4 text-slate-300">
                         This framework was created by the non-profit organisation Forum of Incident Response and
                         Security Teams (FIRST) to characterise and classifies these vulnerabilities.
-                        The system has two sets of base metrics: exploitability and impact. However, the CVSS base
+                        The CVSS has three sets of metrics: base, temporal and environmental. 
+                        The base metrics has two sets of metrics: exploitability and impact. However, the CVSS base
                         impacts do not consider organisational impact.
                         The results of the scoring system ranges from 0 to 10.
                     </p>

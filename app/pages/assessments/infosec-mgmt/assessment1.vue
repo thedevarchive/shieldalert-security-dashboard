@@ -12,10 +12,10 @@
                 Read each question carefully and select the best answer from the provided options.
             </p>
             <p class="mb-2 text-slate-300">
-                The test will take about 30 minutes to complete.
+                Please allow 30 minutes of your time to complete the test. However, you will not be timed. 
             </p>
             <p class="mb-2 text-slate-300">
-                You must score 70% to pass the test.
+                You must correctly answer 70% of the questions to pass the test.
             </p>
         </section>
 
@@ -99,7 +99,7 @@ type Question = {
 // Next 10 questions: Module 2
 // Next 3 questions: Module 3
 // Next 6 questions: Module 4
-// Next 6 questions: Module 5
+// Next 10 questions: Module 5
 // Last 6 questions: Module 6
 let questions: Question[] = [
     {
@@ -418,103 +418,103 @@ let questions: Question[] = [
         explanation: "The CVE is a public list of cybersecurity vulnerabilities created and maintained by MITRE."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT true about the Common Vulnerability Scoring System (CVSS)?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "The framework was created by FIRST.",
+            "The CVSS has three metrics: base, temporal and environmental.",
+            "Base impacts cover organisational impact.",
+            "The results of the scoring system ranges from 0 to 10."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Base impacts cover organisational impact.",
+        explanation: "In the CVSS, the impact metric under the base metric does not cover organisational impact. However, the enviromental metric covers it."
     },
     {
-        questionText: "",
+        questionText: "Which of these have advanced search features that allow users to search by product name, version, vulnerability type and severity?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Common Vulnerability Scoring System (CVSS)",
+            "Common Vulnerabilities and Exposures (CVE)",
+            "The US National Vulnerability Database (NVD)",
+            "National Institute of Standards and Technology (NIST)"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "The US National Vulnerability Database (NVD)",
+        explanation: "he US National Vulnerability Database (NVD) has advanced search features that allow users to search by product name, version and even search by vulnerability type and severity."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT an important question to ask pertaining to maintaining an asset inventory?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Is the asset vendor still supported?",
+            "What is the asset's current patch status?",
+            "What is the asset's current configuration?",
+            "Should the asset be discontinued?"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Should the asset be discontinued?",
+        explanation: "\"Should the asset be discontinued?\" is not an important question for asset inventory. It may reduce the attack surface, but if the organisation requires that asset, this is not a necesary question to ask."
     },
     {
-        questionText: "",
+        questionText: "Which of these processes refers to deciding which assets or configurations of an asset should be hardened and how?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Establishing secure configurations",
+            "Maintaining awareness and detecting vulnerabilities",
+            "Mitigating and remediating identified vulnerabilities",
+            "Continuously monitoring the environment"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Establishing secure configurations",
+        explanation: "The process of establishing secure configurations involving planning which assets or configurations to harden and how they should be done."
     },
     {
-        questionText: "",
+        questionText: "In the vulnerability management process, what is done to maintain awareness and detect vulnerabilities?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Usage of vulnerability management (VM) tools to identify new vulnerabilities",
+            "Hardening configurations",
+            "Identifying assets that need to be secured",
+            "Applying patches to improve security"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Usage of vulnerability management (VM) tools to identify new vulnerabilities",
+        explanation: "Maintaining awareness and detecting vulnerabilities involves being aware of vulnerabilities, and VM tools help ease the process of finding and summarising such information."
     },
     {
-        questionText: "",
+        questionText: "Which one of these does NOT answer the question \"Why do changes in the asset's or system's environment need to be identified often?\"",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Old vulnerabilities will automatically be removed as a result.",
+            "New systems get installed.",
+            "New vulnerabilities will be found from time to time.",
+            "Old vulnerabilities that had temporary fixes can still be exploited."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Old vulnerabilities will automatically be removed as a result.",
+        explanation: "Old vulnerabilities will not immediately resolve after monitoring the environment. In fact, they are still likely to be exploited by attackers especially if they were temporarily patched."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT true about penetration testing?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Pen testing is an offensive cybersecurity test done to identify existing vulnerabilities and flaws in a information system's security.",
+            "Pen testing is conducted to improve the existing security's threat detection and response.",
+            "Pen testing is a point-in-time assessment.",
+            "Pen testing needs to be only done once."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Pen testing needs to be only done once.",
+        explanation: "As pen testing is a point-in-time assessment, it can only identify the current vulnerabilities that exist in the system. It is highly recommend that it needs to be done more than once, and at regular intervals, to keep security up-to-date."
     },
     {
-        questionText: "",
+        questionText: "Which type of pen testing provides the testers with complete information of system?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Whitebox testing",
+            "Blackbox testing",
+            "Greybox testing",
+            "Redbox testing"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Whitebox testing",
+        explanation: "In whitebox testing, the conductors of the test have complete information of the system to validate the effectiveness of a control against threats and vulnerabilities."
     },
     {
-        questionText: "",
+        questionText: "Which type of pen testing is better used to simulate actual cyberattacks?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Whitebox testing",
+            "Blackbox testing",
+            "Greybox testing",
+            "Bluebox testing"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Blackbox testing",
+        explanation: "As blackbox testing have the testers not know what the system does, it is often used to simulate cyberattacks."
     },
     {
         questionText: "",
@@ -585,7 +585,7 @@ let questions: Question[] = [
 ]
 
 //TODO: adjust question limit and pass percentage
-const maxQuestions = 10
+const maxQuestions = 40
 const passPercentage = 0.7
 const minCorrectAnswers = Math.round(maxQuestions * passPercentage)
 
