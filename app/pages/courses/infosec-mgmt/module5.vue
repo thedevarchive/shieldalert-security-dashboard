@@ -10,22 +10,42 @@ const sections = [
     },
     {
         id: '2',
-        title: 'The vulnerability management process',
-    },
-    {
-        id: '3',
         title: 'Common Vulnerability Scoring System (CVSS)',
     },
     {
-        id: '4',
+        id: '3',
         title: 'Common Vulnerabilities and Exposures (CVE)',
     },
     {
-        id: '5',
+        id: '4',
         title: 'The US National Vulnerability Database (NVD)',
     },
     {
+        id: '5',
+        title: 'The vulnerability management process',
+    },
+    {
+        id: '6',
+        title: 'Maintaining an asset inventory',
+    },
+    {
+        id: '7',
+        title: 'Establishing secure configurations',
+    },
+    {
+        id: '8',
+        title: 'Maintaining awareness and detecting vulnerabilities',
+    },
+    {
         id: '9',
+        title: 'Mitigating and remediating identified vulnerabilities',
+    },
+    {
+        id: '10',
+        title: 'Continuously monitoring the organisation\'s IT environment',
+    },
+    {
+        id: '11',
         title: 'Sources',
     },
 ]
@@ -175,11 +195,41 @@ const sections = [
                     <p class="mb-4 text-slate-300">
                         While being aware of vulnerabilities can be challenging since there is a lot of information on
                         them, vulnerability management tools can help since they provide a summary of the information
-                        out there. They can also find vulnerabilities in assets as well. 
+                        out there. They can also find vulnerabilities in assets as well.
                     </p>
                 </section>
 
-                <section id="9" class="scroll-mt-24 py-10">
+                <section id="9" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Mitigating and remediating identified vulnerabilities
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        Vulnerabilities can be resolved by either applying patches to fix the defect or changing
+                        configurations to improve security. These patches should be tested before they are deployed.
+                        Vulnerabilities could also be managed to lessen the severity
+                        through blocking access or disabling services. However, the latter option is only a temporary
+                        fix until a better solution is applied.
+                    </p>
+                </section>
+
+                <section id="10" class="scroll-mt-24 border-b border-slate-800 py-10">
+                    <h2 class="mb-4 text-2xl font-semibold">
+                        Continuously monitoring the environment
+                    </h2>
+
+                    <p class="mb-4 text-slate-300">
+                        Changes need to be identified often because 
+                    </p>
+                    <ol class="mb-4 list-decimal space-y-3 pl-6 text-slate-300">
+                        <li>Configuration changes occur frequently</li>
+                        <li>New systems get installed</li>
+                        <li>New vulnerabilities will be found from time to time</li>
+                        <li>Old vulnerabilities that had temporary fixes can still be exploited</li>
+                    </ol>
+                </section>
+
+                <section id="11" class="scroll-mt-24 py-10">
                     <h2 class="mb-4 text-2xl font-semibold">
                         Sources
                     </h2>
