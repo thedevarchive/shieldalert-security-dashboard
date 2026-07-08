@@ -51,8 +51,7 @@ This is a page that tells you what to do when any of your accounts have been com
 ## Courses
 
 Learn about cybersecurity through Courses. Select a course under the Course dropdown and read through the modules. 
-
-Assessments to test your learning will be coming soon. 
+Certain modules will feature assessments to test your knowledge on the course. Some courses can have more than one test. 
 
 # Features
 
@@ -62,10 +61,7 @@ Assessments to test your learning will be coming soon.
 * Link checker the identifies if the link is suspicious
 * Breach response checklist that shows the user what to do when their account is compromised 
 * Courses for learning about cybersecurity 
-
-# Upcoming Features 
-
-* Assessments for testing user's knowledge and comprehension of the courses 
+* Assessments for testing user's knowledge on the courses 
 
 # How to Report Issues
 
