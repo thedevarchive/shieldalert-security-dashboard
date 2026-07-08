@@ -63,6 +63,10 @@ Certain modules will feature assessments to test your knowledge on the course. S
 * Courses for learning about cybersecurity 
 * Assessments for testing user's knowledge on the courses 
 
+## Upcoming Features
+
+* None at the moment, I'm just finishing up on the Information Security course.
+
 # How to Report Issues
 
 Email me at amaengo@protonmail.com if you find any bugs in the program or have any issues running it. Any feedback or suggestions is appreciated. 
