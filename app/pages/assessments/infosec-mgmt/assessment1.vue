@@ -1,106 +1,22 @@
 <template>
-    <main class="mx-auto max-w-4xl px-6 py-10 text-white">
-        <section class="mb-8">
-            <p class="mb-2 font-semibold text-cyan-400">
-                Information Security Management
-            </p>
-            <h1 class="mb-3 text-4xl font-bold">
-                Midpoint Assessment
-            </h1>
-
-            <p class="mb-2 text-slate-300">
-                Read each question carefully and select the best answer from the provided options.
-            </p>
-            <p class="mb-2 text-slate-300">
-                Please allow 30 minutes of your time to complete the test. However, you will not be timed.
-            </p>
-            <p class="mb-2 text-slate-300">
-                You must correctly answer 70% of the questions to pass the test.
-            </p>
-        </section>
-
-        <section class="rounded-2xl border border-slate-800 bg-slate-900 p-6" v-if="!quizFinished">
-            <div class="mb-4 flex items-center justify-between" v-if="!hasAnswered">
-                <p class="text-sm text-slate-400">
-                    Question {{ currentQuestionIndex + 1 }} of {{ maxQuestions }}
-                </p>
-
-                <p class="text-sm text-slate-400">
-                    Score: {{ score }}
-                </p>
-            </div>
-
-            <div class="rounded-xl border border-slate-700 bg-slate-950 p-5" v-if="!hasAnswered">
-                <p class="mb-2 text-sm text-slate-400">
-                    {{ currentQuestion?.questionText }}
-                </p>
-            </div>
-
-            <!-- User choices -->
-            <div v-if="!hasAnswered" class="mt-6 flex flex-col gap-3">
-                <button v-for="choice in currentChoices" @click="answerQuestion(choice)"
-                    class="rounded-xl bg-slate-500 px-5 py-3 font-medium text-white transition hover:bg-slate-400">
-                    {{ choice }}
-                </button>
-            </div>
-
-            <div v-else class="mt-6 rounded-xl border p-5"
-                :class="isCorrect ? 'border-emerald-500 bg-emerald-950/40' : 'border-red-500 bg-red-950/40'">
-                <p v-if="!isCorrect" class="mb-2 text-lg text-slate-300">
-                    You answered: <strong>{{ selectedAnswer }}</strong>
-                </p>
-
-                <p class="mb-2 text-lg text-slate-300">
-                    Correct answer: <strong>{{ currentQuestion?.correctAnswer }}</strong>
-                </p>
-
-                <p class="mb-4 text-sm text-slate-300">
-                    {{ currentQuestion?.explanation }}
-                </p>
-
-                <!-- This button moves user to the next question -->
-                <button @click="nextQuestion"
-                    class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400">
-                    {{ isLastQuestion ? 'Finish quiz' : 'Next question' }}
-                </button>
-            </div>
-        </section>
-
-        <section v-if="quizFinished" class="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
-            <h2 class="mb-2 text-2xl font-bold">
-                Quiz complete
-            </h2>
-
-            <p class="text-slate-300">
-                You scored {{ score }} out of {{ maxQuestions }}.
-            </p>
-
-            <p v-if="hasPassed" class="text-slate-300">
-                Congratulations! You passed. 
-            </p>
-            <p v-else>
-                You didn't score 70% on the assessment.
-            </p>
-
-            <!-- Button for resetting quiz -->
-            <button @click="restartQuiz"
-                class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400">
-                Try again
-            </button>
-        </section>
-    </main>
+    <AssessmentQuiz
+        course-title="Information Security Management"
+        assessment-title="Midpoint Assessment"
+        :instructions="instructions"
+        :questions="questions"
+        :max-questions="30"
+        :pass-percentage="0.7"
+    />
 </template>
 
 <script setup lang="ts">
-//questionText contains the question 
-//correctAnswer has the correct answer among the choices
-//explanation has the justification for the correct answer
-type Question = {
-    questionText: string
-    choices: string[]
-    correctAnswer: string
-    explanation: string
-}
+import type { AssessmentQuestion } from '~/types/assessment'
+
+const instructions = [
+    'Read each question carefully and select the best answer from the provided options.',
+    'Please allow 30 minutes of your time to complete the test. However, you will not be timed.',
+    'You must correctly answer 70% of the questions to pass the test.',
+]
 
 // First 12 questions: Module 1
 // Next 10 questions: Module 2
@@ -108,7 +24,7 @@ type Question = {
 // Next 6 questions: Module 4
 // Next 10 questions: Module 5
 // Last 8 questions: Module 6
-let questions: Question[] = [
+const questions: AssessmentQuestion[] = [
     {
         questionText: "Why is information security essential?",
         choices: [
@@ -579,69 +495,4 @@ let questions: Question[] = [
         explanation: "Following up involves analysing the produced report in the reporting stage so that it aligns with the organisation's context, objectives and business impact."
     }
 ]
-
-//TODO: adjust question limit and pass percentage
-const maxQuestions = 30
-const passPercentage = 0.7
-const minCorrectAnswers = Math.round(maxQuestions * passPercentage)
-
-//shuffle questions 
-const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5)
-questions = shuffledQuestions
-
-const currentQuestionIndex = ref(0) // get current question number
-const selectedAnswer = ref<string | null>(null) // gets user's answer 
-const score = ref(0) // get user's score 
-const quizFinished = ref(false) //check if quiz is finished
-
-const currentQuestion = computed(() => questions[currentQuestionIndex.value]) //get current question
-
-//shuffle choices in currentQuestion and put it in a ref 
-const currentChoices = computed(() => {
-    return [...(currentQuestion.value?.choices ?? [])]
-        .sort(() => Math.random() - 0.5)
-})
-
-const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered 
-
-const hasPassed = computed(() => score.value >= minCorrectAnswers)
-
-//compares user's answers to correct answer of current question
-const isCorrect = computed(() => {
-    return selectedAnswer.value === currentQuestion.value?.correctAnswer
-})
-
-//checks if user is at last question to finish the quiz
-const isLastQuestion = computed(() => {
-    return currentQuestionIndex.value === maxQuestions - 1
-})
-
-//record user's answer and add 1 to user's score if user got it right 
-function answerQuestion(answer: string) {
-    selectedAnswer.value = answer
-
-    if (answer === currentQuestion.value?.correctAnswer) {
-        score.value++
-    }
-}
-
-//increment quiz question index by 1 unless quiz is at last question 
-//after moving to next question, reset user's selected answer to null 
-function nextQuestion() {
-    if (isLastQuestion.value) {
-        quizFinished.value = true
-        return
-    }
-
-    currentQuestionIndex.value++
-    selectedAnswer.value = null
-}
-
-//reset all values and allow user to take the quiz again 
-function restartQuiz() {
-    currentQuestionIndex.value = 0
-    selectedAnswer.value = null
-    score.value = 0
-    quizFinished.value = false
-}
 </script>

@@ -210,8 +210,9 @@ const sections = [
                     </h2>
 
                     <p class="mb-4 text-slate-300">
-                        The pen test report is required to analysed so that it aligns with the organisational context, 
-                        the organisation's objectives and the business' impacts. Afterwards, treatment plans can be created based on these findings. 
+                        The pen test report is required to analysed so that it aligns with the organisational context,
+                        the organisation's objectives and the business' impacts. Afterwards, treatment plans can be
+                        created based on these findings.
                     </p>
                 </section>
 
@@ -229,8 +230,24 @@ const sections = [
                     </div>
                 </section>
 
+                <section id="10" class="flex gap-4 py-10 rounded-xl border border-slate-800 bg-slate-900 p-4">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="text-2xl font-semibold">
+                            Midpoint Assessment
+                        </h2>
+                        <p class="text-white">See how much you know about the course so far.</p>
+                    </div>
+
+                    <div class="flex ml-auto">
+                        <NuxtLink to="/assessments/infosec-mgmt/assessment1"
+                            class="rounded-xl bg-cyan-500 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-400 h-[50px] w-auto">
+                            Take Test
+                        </NuxtLink>
+                    </div>
+                </section>
+
                 <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
-                    <NuxtLink to="/courses/infosec-mgmt/module4"
+                    <NuxtLink to="/courses/infosec-mgmt/module5"
                         class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
                         Previous
                     </NuxtLink>
