@@ -12,7 +12,7 @@
                 Read each question carefully and select the best answer from the provided options.
             </p>
             <p class="mb-2 text-slate-300">
-                Please allow 30 minutes of your time to complete the test. However, you will not be timed. 
+                Please allow 30 minutes of your time to complete the test. However, you will not be timed.
             </p>
             <p class="mb-2 text-slate-300">
                 You must correctly answer 70% of the questions to pass the test.
@@ -26,7 +26,7 @@
                 </p>
 
                 <p class="text-sm text-slate-400">
-                    Score: {{ score }}/{{ questions.length }}
+                    Score: {{ score }}
                 </p>
             </div>
 
@@ -72,7 +72,14 @@
             </h2>
 
             <p class="text-slate-300">
-                You scored {{ score }} out of {{ questions.length }}.
+                You scored {{ score }} out of {{ maxQuestions }}.
+            </p>
+
+            <p v-if="hasPassed" class="text-slate-300">
+                Congratulations! You passed. 
+            </p>
+            <p v-else>
+                You didn't score 70% on the assessment.
             </p>
 
             <!-- Button for resetting quiz -->
@@ -100,7 +107,7 @@ type Question = {
 // Next 3 questions: Module 3
 // Next 6 questions: Module 4
 // Next 10 questions: Module 5
-// Last 6 questions: Module 6
+// Last 8 questions: Module 6
 let questions: Question[] = [
     {
         questionText: "Why is information security essential?",
@@ -121,7 +128,7 @@ let questions: Question[] = [
             "Customisability, Identification, Accountability",
             "Confidentiality, Integrity, Availability",
         ],
-        correctAnswer: "Confidentiality, Integrity, Accessbility",
+        correctAnswer: "Confidentiality, Integrity, Availability",
         explanation: "CIA stands for confidentiality, integrity and accessbility, which are also the three properties of reliable information."
     },
     {
@@ -215,9 +222,9 @@ let questions: Question[] = [
     {
         questionText: "Which of these series of attacks are all active attacks?",
         choices: [
-            "Man in the middle (MITM), replay attack, spoofing", 
-            "Pharming, phishing, cyberbullying", 
-            "Eavesdropping, shoulder surfing, network monitoring", 
+            "Man in the middle (MITM), replay attack, spoofing",
+            "Pharming, phishing, cyberbullying",
+            "Eavesdropping, shoulder surfing, network monitoring",
             "Distributed denial of service (DDoS), man in the middle (MITM), packet sniffing"
         ],
         correctAnswer: "Man in the middle (MITM), replay attack, spoofing",
@@ -244,7 +251,7 @@ let questions: Question[] = [
     {
         questionText: "What is a replay attack?",
         choices: [
-            "An attack involving repeatedly guessing passwords until the correct one is found.", 
+            "An attack involving repeatedly guessing passwords until the correct one is found.",
             "An attack where an attacker intercepts a conversation and changes the messages before forwarding them to each party",
             "An attack where an attacker replays multiple requests to make a server unavailable",
             "An attack where an attacker records valid credentials in order to use that information later to gain access to a user's account or information they have access to."
@@ -266,7 +273,7 @@ let questions: Question[] = [
     {
         questionText: "In information security, what is risk?",
         choices: [
-            "The potential for loss or damage when a threat exploits a vulnerability", 
+            "The potential for loss or damage when a threat exploits a vulnerability",
             "A software flaw that allows unauthorised access",
             "The possibility for loss of funds or other important assets",
             "An event that always results in a security breach"
@@ -344,7 +351,7 @@ let questions: Question[] = [
         questionText: "Which of these is both a security management framework and a security controls framework?",
         choices: [
             "ISO 27001",
-            "IS0 27002",
+            "ISO 27002",
             "NIST Cybersecurity Framework",
             "Secure Controls Framework (SCF)"
         ],
@@ -517,75 +524,64 @@ let questions: Question[] = [
         explanation: "As blackbox testing have the testers not know what the system does, it is often used to simulate cyberattacks."
     },
     {
-        questionText: "",
+        questionText: "Which of these is the correct order of steps in pen testing?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Initial engagement, scoping, testing, reporting, following up",
+            "Initial engagement, testing, scoping, reporting, following up",
+            "Initial engagement, testing, scoping, following up, reporting",
+            "Initial engagement, reporting, scoping, testing, following up"
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Initial engagement, scoping, testing, reporting, following up",
+        explanation: "The typical pen testing steps are in this order: initial engagement, scoping, testing, reporting and following up."
     },
     {
-        questionText: "",
+        questionText: "Why is initial engagement important in pen testing?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "It establishes the clearly specified requirements, context of the test and the testers who are qualified to execute it.",
+            "It establishes the vulnerabilities and exploits that will be discovered during the penetration test.",
+            "It allows penetration testers to begin exploiting systems before defining the scope of the test.",
+            "It determines the final security controls that must be implemented after the pen test."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "It establishes the clearly specified requirements, context of the test and the testers who are qualified to execute it.",
+        explanation: "In the initial engagement phase, the requirements and the context of the test have to clearly specified, especially for uncommon or complex systems. Moreover, the conductors of the test must have the right skills and have the proper experience to execute it."
     },
     {
-        questionText: "",
+        questionText: "Which is NOT true about the scoping phase in pen testing?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Not all stakeholders need to be identified.",
+            "Each participant must contribute to the scope discussion.",
+            "Specific times when testing should happen and systems excluded from testing should be addressed and confirmed.",
+            "The discussion must result in an engagement plan."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Not all stakeholders need to be identified.",
+        explanation: "In the scoping phase, all stakeholders need to be identified. This includes risk owners, service owners, technical staff and at least one person who can conduct the pen test."
     },
     {
-        questionText: "",
+        questionText: "Which of these is NOT true about the testing phase in pen testing?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "The pen test team and the client should remain in communication.",
+            "Test team should know how to escalate critical issues.",
+            "Barriers to effective testing must be reported and resolved as soon as possible.",
+            "Changes in scope should be reserved for the next planned pen testing."
         ],
-        correctAnswer: "",
-        explanation: ""
+        correctAnswer: "Changes in scope should be reserved for the next planned pen testing.",
+        explanation: "In the testing phase, changes in scope should be acknowledged by all parties, and these changes should be resolved and recorded."
     },
     {
-        questionText: "",
+        questionText: "Which pen testing step involves analysing a report so that it aligns with the organisational context?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Initial engagement",
+            "Scoping",
+            "Reporting",
+            "Following up"
         ],
-        correctAnswer: "",
-        explanation: ""
-    },
-    {
-        questionText: "",
-        choices: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        correctAnswer: "",
-        explanation: ""
-    },
+        correctAnswer: "Following up",
+        explanation: "Following up involves analysing the produced report in the reporting stage so that it aligns with the organisation's context, objectives and business impact."
+    }
 ]
 
 //TODO: adjust question limit and pass percentage
-const maxQuestions = 40
+const maxQuestions = 30
 const passPercentage = 0.7
 const minCorrectAnswers = Math.round(maxQuestions * passPercentage)
 
@@ -608,6 +604,8 @@ const currentChoices = computed(() => {
 
 const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered 
 
+const hasPassed = computed(() => score.value >= minCorrectAnswers)
+
 //compares user's answers to correct answer of current question
 const isCorrect = computed(() => {
     return selectedAnswer.value === currentQuestion.value?.correctAnswer
@@ -615,7 +613,7 @@ const isCorrect = computed(() => {
 
 //checks if user is at last question to finish the quiz
 const isLastQuestion = computed(() => {
-    return maxQuestions === questions.length - 1
+    return currentQuestionIndex.value === maxQuestions - 1
 })
 
 //record user's answer and add 1 to user's score if user got it right 

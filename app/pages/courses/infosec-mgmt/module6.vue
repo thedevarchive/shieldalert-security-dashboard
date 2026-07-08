@@ -211,7 +211,7 @@ const sections = [
 
                     <p class="mb-4 text-slate-300">
                         The pen test report is required to analysed so that it aligns with the organisational context, 
-                        the organisation's objectives and the business' impacts. Afterwards, treatment plans can be creted based on these findings. 
+                        the organisation's objectives and the business' impacts. Afterwards, treatment plans can be created based on these findings. 
                     </p>
                 </section>
 
