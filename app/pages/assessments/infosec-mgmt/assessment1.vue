@@ -12,6 +12,10 @@
 <script setup lang="ts">
 import type { AssessmentQuestion } from '~/types/assessment'
 
+useHead({
+    title: 'Midpoint Assessment',
+})
+
 const instructions = [
     'Read each question carefully and select the best answer from the provided options.',
     'Please allow 30 minutes of your time to complete the test. However, you will not be timed.',

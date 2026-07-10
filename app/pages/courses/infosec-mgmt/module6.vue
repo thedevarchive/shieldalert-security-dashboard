@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+    title: 'Penetration Testing',
+})
+
 const sections = [
     {
         id: '0',

@@ -64,6 +64,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Suspicious Link Checklist',
+})
+
 const link = ref('') //state for user-inputted suspicious link 
 
 //similar to password checker, the link is tested against boolean conditions or regexes in the failed properties 

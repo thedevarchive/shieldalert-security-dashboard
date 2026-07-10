@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+    title: 'Security Incidents and Attacks',
+})
+
 const sections = [
     {
         id: '0',

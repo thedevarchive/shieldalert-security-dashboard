@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+    title: 'Security Management Frameworks and Controls Management',
+})
+
 const sections = [
     {
         id: '0',

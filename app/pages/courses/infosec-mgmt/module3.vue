@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+    title: 'Risk Management',
+})
+
 const sections = [
     {
         id: '0',

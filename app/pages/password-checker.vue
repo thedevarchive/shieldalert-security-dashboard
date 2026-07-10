@@ -2,6 +2,10 @@
 import { Eye, EyeOff } from '@lucide/vue'
 import TipCard from '~/components/TipCard.vue'
 
+useHead({
+  title: 'Password Strength Checker',
+})
+
 const password = ref('') //state for password input 
 const showPassword = ref(false) //determines if inputted password is shown or hidden
 

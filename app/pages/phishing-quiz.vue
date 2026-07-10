@@ -98,6 +98,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Phishing Email Quiz',
+})
+
 type Answer = 'safe' | 'phishing'
 
 //from, subject and body simulate a sample email question

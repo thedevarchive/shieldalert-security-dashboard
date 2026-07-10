@@ -55,6 +55,10 @@
 <script setup lang="ts">
 import { TriangleAlert } from '@lucide/vue'
 
+useHead({
+  title: 'Breach Response Checklist',
+})
+
 type ChecklistItem = {
   title: string
   description: string

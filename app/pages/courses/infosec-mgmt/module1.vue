@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: 'Information Security Fundamentals',
+})
+
 const sections = [
   {
     id: '0',
