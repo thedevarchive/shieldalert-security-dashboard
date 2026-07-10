@@ -13,7 +13,7 @@
 import type { AssessmentQuestion } from '~/types/assessment'
 
 useHead({
-    title: 'Midpoint Assessment',
+    title: 'Information Security Management - Midpoint Assessment',
 })
 
 const instructions = [
