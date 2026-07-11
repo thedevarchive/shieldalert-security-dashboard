@@ -227,29 +227,12 @@ const sections = [
 
                     <div class="space-y-3">
                         <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Vulnerability
-                                Management.</em> [Presentation]. <a class="text-cyan-400"
+                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Identity Management.</em> [Presentation]. <a class="text-cyan-400"
                                 href="https://www.canvas.qut.edu.au/">Canvas.</a>
                         </div>
                     </div>
                 </section>
-
-                <section id="10" class="flex gap-4 px-8 py-10 rounded-xl border border-slate-800 bg-slate-900">
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-2xl font-semibold">
-                            Midpoint Assessment
-                        </h2>
-                        <p class="text-white">See how much you know about <strong>Modules 1-6 of Information Security Management</strong> so far.</p>
-                    </div>
-
-                    <div class="flex ml-auto text-center">
-                        <NuxtLink to="/assessments/infosec-mgmt/assessment1"
-                            class="rounded-xl bg-cyan-500 my-4 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-400 h-[50px] w-[120px]">
-                            Take Test
-                        </NuxtLink>
-                    </div>
-                </section>
-
+                
                 <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
                     <NuxtLink to="/courses/infosec-mgmt/module5"
                         class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
