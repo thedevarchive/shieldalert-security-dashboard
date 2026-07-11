@@ -4,6 +4,6 @@
 
 <script setup lang="ts">
 useHead({
-    title: 'Final Assessment',
+    title: 'Information Security Management - Final Assessment',
 })
 </script>
