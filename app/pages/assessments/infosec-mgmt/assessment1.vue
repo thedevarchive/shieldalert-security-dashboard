@@ -360,7 +360,18 @@ const questions: AssessmentQuestion[] = [
             "National Institute of Standards and Technology (NIST)"
         ],
         correctAnswer: "The US National Vulnerability Database (NVD)",
-        explanation: "he US National Vulnerability Database (NVD) has advanced search features that allow users to search by product name, version and even search by vulnerability type and severity."
+        explanation: "The US National Vulnerability Database (NVD) has advanced search features that allow users to search by product name, version and even search by vulnerability type and severity."
+    },
+    {
+        questionText: "Which of these analogies are correct?",
+        choices: [
+            "CVE : Scoring ; NVD : Database",
+            "Base : Organisational impact ; Impact : Confidentiality impact",
+            "Establishing secure configurations : Hardening ; Detecting vulnerabilities : VM tools",
+            "CVSS : NIST ; NVD : FIRST"
+        ],
+        correctAnswer: "Establishing secure configurations : Hardening ; Detecting vulnerabilities : VM tools",
+        explanation: "Both of these refer to different vulnerability management processes. Establishing secure configurations is the step that determines which controls should be hardened while detecting vulnerabilities involves using VM tools."
     },
     {
         questionText: "Which of these is NOT an important question to ask pertaining to maintaining an asset inventory?",
