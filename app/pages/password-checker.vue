@@ -8,6 +8,8 @@ useHead({
 
 const password = ref('') //state for password input 
 const showPassword = ref(false) //determines if inputted password is shown or hidden
+const obviousPattern = /(p[a@]ssw[o0]rd|asdf|abc|qwerty|test|testing|welcome|123|1234|1111|0000)/i
+const hasObviousPattern = computed(() => obviousPattern.test(password.value))
 
 // label has the password requirements user should ideally follow
 // passed contains the boolean condition/regex that checks if user's password is following the requirement 
@@ -34,7 +36,7 @@ const checks = computed(() => [
   },
   {
     label: 'Does not contain obvious words',
-    passed: !/(password|asdf|abc|qwerty|welcome|123)/i.test(password.value),
+    passed: !hasObviousPattern.value,
   },
 ])
 
@@ -46,7 +48,12 @@ const passedChecks = computed(() => {
 //calculate progress bar value 
 const score = computed(() => {
   if (!password.value) return 0
-  return Math.round((passedChecks.value / checks.value.length) * 100)
+
+  const baseScore = Math.round((passedChecks.value / checks.value.length) * 100)
+
+  if (hasObviousPattern.value) return Math.min(baseScore, 30)
+
+  return baseScore
 })
 
 //display strength of password based on the progress bar value 
@@ -93,8 +100,7 @@ const possibleCombinations = computed(() => {
 const crackTimeSeconds = computed(() => {
   const guessesPerSecond = 1_000_000_000
 
-  if (!possibleCombinations.value) return 0
-
+  if (!possibleCombinations.value || hasObviousPattern.value) return 0
   return possibleCombinations.value / guessesPerSecond
 })
 
