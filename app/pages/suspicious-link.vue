@@ -80,10 +80,6 @@ const checks = computed(() => {
       failed: value.length > 0 && !value.startsWith('https://'),
     },
     {
-      label: 'Contains suspicious words',
-      failed: /(login|verify|secure|update|banking|confirm)/.test(value),
-    },
-    {
       label: 'Contains many numbers or symbols',
       failed: /[\d]{4,}|@|%/.test(value),
     },

@@ -8,7 +8,7 @@ useHead({
 
 const password = ref('') //state for password input 
 const showPassword = ref(false) //determines if inputted password is shown or hidden
-const obviousPattern = /(p[a@]ssw[o0]rd|asdf|abc|qwerty|test|testing|welcome|123|1234|1111|0000)/i
+const obviousPattern = /(p[a4@]ssw[o0]rd|asdf|abc|qwerty|test|testing|welcome|123|1234|1111|0000)/i
 const hasObviousPattern = computed(() => obviousPattern.test(password.value))
 
 // label has the password requirements user should ideally follow
