@@ -51,6 +51,7 @@ const score = computed(() => {
 
   const baseScore = Math.round((passedChecks.value / checks.value.length) * 100)
 
+  // keep score at 30 when obvious words are used in the password
   if (hasObviousPattern.value) return Math.min(baseScore, 30)
 
   return baseScore
@@ -100,6 +101,8 @@ const possibleCombinations = computed(() => {
 const crackTimeSeconds = computed(() => {
   const guessesPerSecond = 1_000_000_000
 
+  // if possible combinations has no value, return 0
+  // if an obvious password pattern is detected, also return 0 so that user is informed that this is an easily guessable password
   if (!possibleCombinations.value || hasObviousPattern.value) return 0
   return possibleCombinations.value / guessesPerSecond
 })
