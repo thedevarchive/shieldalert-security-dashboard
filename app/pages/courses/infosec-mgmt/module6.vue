@@ -151,12 +151,12 @@ const sections = [
                     <p class="mb-4 text-slate-300">
                         Each participant must contribute to the scope discussion.
                     </p>
-                    <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
                         <li>Risk and service owners should highlight areas of concern</li>
                         <li>Technical staff should outline the technical boundaries of the system to be tested</li>
                         <li>The pen test team should identify the type of testing to use to get a complete idea of the
                             vulnerability of the target</li>
-                    </ol>
+                    </ul>
                     <p class="mb-4 text-slate-300">
                         Specific times when testing should happen and systems excluded from testing should be addressed
                         and confirmed.
@@ -165,14 +165,14 @@ const sections = [
                     <p class="mb-4 text-slate-300">
                         The discussion must produce an output in the form of an engagement plan, which should include
                     </p>
-                    <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
                         <li>Boundaries of testing, both technical and physical</li>
                         <li>Types of testing that will be conducted</li>
                         <li>Time frame and time constraints on testing and reporting</li>
                         <li>Needs of the pen test team</li>
                         <li>Compliance requirements</li>
                         <li>Reporting requirements</li>
-                    </ol>
+                    </ul>
                 </section>
 
                 <section id="5" class="scroll-mt-24 border-b border-slate-800 py-10">
@@ -185,14 +185,14 @@ const sections = [
                         take note of while testing.
                     </p>
 
-                    <ol class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+                    <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
                         <li>The pen test team and the client should remain in communication, in case testing goes wrong
                             and affects other systems</li>
                         <li>Test team should know how to escalate critical issues</li>
                         <li>Barriers to effective testing must be reported and resolved as soon as possible</li>
                         <li>Changes in scope should be acknowledged by all parties, and these changes should be resolved
                             and recorded</li>
-                    </ol>
+                    </ul>
                 </section>
 
                 <section id="6" class="scroll-mt-24 border-b border-slate-800 py-10">
