@@ -155,7 +155,7 @@ const sections = [
                     <p class="mb-4 text-slate-300">
                         Reusable passwords are often used as a form of user authentication. The system stores the
                         encrypted password values while the user provides their credentials to confirm their identity.
-                        The user must ensure that they must remember their password and that it is stored securely.  
+                        The user must ensure that they must remember their password and that it is stored securely.
                     </p>
 
                     <p class="mb-4 text-slate-300">
@@ -200,8 +200,14 @@ const sections = [
 
                     <div class="space-y-3">
                         <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
-                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Vulnerability
+                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Identity
                                 Management.</em> [Presentation]. <a class="text-cyan-400"
+                                href="https://www.canvas.qut.edu.au/">Canvas.</a>
+                        </div>
+
+                        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+                            Rhodes, A. (2023). <em>IFN541 Information Security Management: Other User Authentication
+                                Mechanisms</em> [Presentation]. <a class="text-cyan-400"
                                 href="https://www.canvas.qut.edu.au/">Canvas.</a>
                         </div>
                     </div>
