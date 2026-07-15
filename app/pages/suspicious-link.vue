@@ -1,9 +1,7 @@
 <template>
   <main class="mx-auto max-w-4xl px-6 py-10 text-white">
     <section class="mb-8">
-      <h1 class="mb-3 text-4xl font-bold">
-        Suspicious Link Checklist
-      </h1>
+      <h1 class="mb-3 text-4xl font-bold">Suspicious Link Checklist</h1>
 
       <p class="text-slate-300">
         Analyse a URL for common phishing and scam indicators.
@@ -15,8 +13,13 @@
         Paste a link
       </label>
 
-      <input id="link" v-model="link" type="text" placeholder="https://example.com"
-        class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none focus:border-cyan-400" />
+      <input
+        id="link"
+        v-model="link"
+        type="text"
+        placeholder="https://example.com"
+        class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none focus:border-cyan-400"
+      />
 
       <div class="mt-6">
         <div class="mb-2 flex items-center justify-between">
@@ -28,36 +31,50 @@
         </div>
 
         <div class="h-3 rounded-full bg-slate-800">
-          <div class="h-3 rounded-full transition-all" :class="riskBarClass" :style="{ width: `${riskScore}%` }" />
+          <div
+            class="h-3 rounded-full transition-all"
+            :class="riskBarClass"
+            :style="{ width: `${riskScore}%` }"
+          />
         </div>
       </div>
 
       <ul class="mt-6 space-y-3">
-        <li v-for="check in checks" :key="check.label" class="flex items-center gap-3 text-sm">
-          <span class="flex h-5 w-5 items-center justify-center rounded-full text-xs" :class="!link ? 'bg-gray-500' : (check.failed
-            ? 'bg-red-500 text-white'
-            : 'bg-emerald-500 text-white')">
-            {{ !link ? '-' : ( check.failed ? '!' : '✓' ) }}
+        <li
+          v-for="check in checks"
+          :key="check.label"
+          class="flex items-center gap-3 text-sm"
+        >
+          <span
+            class="flex h-5 w-5 items-center justify-center rounded-full text-xs"
+            :class="
+              !link
+                ? 'bg-gray-500'
+                : check.failed
+                  ? 'bg-red-500 text-white'
+                  : 'bg-emerald-500 text-white'
+            "
+          >
+            {{ !link ? '-' : check.failed ? '!' : '✓' }}
           </span>
 
-          <span :class="check.failed
-            ? 'text-red-300'
-            : 'text-slate-300'">
+          <span :class="check.failed ? 'text-red-300' : 'text-slate-300'">
             {{ check.label }}
           </span>
         </li>
       </ul>
-        
+
       <div class="mt-6">
         <TipCard
           :title="'Reminders'"
           :description="[
             '• A link can still be malicious even if it looks normal.',
-            '• A link can also be normal even if it is suspicious.', 
+            '• A link can also be normal even if it is suspicious.',
             '• Always verify unexpected login pages, invoices, downloads or urgent requests.',
-            '• As this is only a simple link checker, you may need to verify the context and sender to ensure the link is not suspicious.'
-            ]"
-          :is-dark="true" />
+            '• As this is only a simple link checker, you may need to verify the context and sender to ensure the link is not suspicious.',
+          ]"
+          :is-dark="true"
+        />
       </div>
     </section>
   </main>
@@ -68,11 +85,11 @@ useHead({
   title: 'Suspicious Link Checklist',
 })
 
-const link = ref('') //state for user-inputted suspicious link 
+const link = ref('') //state for user-inputted suspicious link
 
-//similar to password checker, the link is tested against boolean conditions or regexes in the failed properties 
+//similar to password checker, the link is tested against boolean conditions or regexes in the failed properties
 const checks = computed(() => {
-  const value = link.value.toLowerCase() //set link to lowercase 
+  const value = link.value.toLowerCase() //set link to lowercase
 
   return [
     {
@@ -111,7 +128,7 @@ const riskScore = computed(() => {
   return Math.min(failedChecks.value * 20, 100)
 })
 
-//show risk status to user 
+//show risk status to user
 const riskLabel = computed(() => {
   if (!link.value) return 'Not tested'
   if (riskScore.value < 25) return 'Little to no red flags'

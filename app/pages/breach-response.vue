@@ -1,20 +1,27 @@
 <template>
   <main class="mx-auto max-w-4xl px-6 py-10 text-white">
     <section class="mb-8">
-      <h1 class="mb-3 text-4xl font-bold">
-        Breach Response Checklist
-      </h1>
+      <h1 class="mb-3 text-4xl font-bold">Breach Response Checklist</h1>
 
       <p class="text-slate-300">
-        Follow these steps if you think one of your accounts has been compromised.
+        Follow these steps if you think one of your accounts has been
+        compromised.
       </p>
     </section>
 
     <!-- checklist user should tick when they accomplish the steps for their account -->
     <section class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-      <div v-for="item in checklist" :key="item.title" class="mb-4 rounded-xl border border-slate-800 bg-slate-950 p-5">
+      <div
+        v-for="item in checklist"
+        :key="item.title"
+        class="mb-4 rounded-xl border border-slate-800 bg-slate-950 p-5"
+      >
         <div class="flex items-start gap-4">
-          <input v-model="item.completed" type="checkbox" class="mt-5 h-5 w-5 accent-cyan-400" />
+          <input
+            v-model="item.completed"
+            type="checkbox"
+            class="mt-5 h-5 w-5 accent-cyan-400"
+          />
           <div>
             <p class="mb-2 text-lg font-semibold">
               {{ item.title }}
@@ -29,9 +36,7 @@
 
       <div class="mt-6">
         <div class="mb-2 flex items-center justify-between">
-          <span class="text-sm text-slate-300">
-            Progress
-          </span>
+          <span class="text-sm text-slate-300"> Progress </span>
 
           <span class="text-sm font-semibold text-cyan-400">
             {{ completedSteps }}/{{ checklist.length }}
@@ -39,14 +44,21 @@
         </div>
 
         <div class="h-3 rounded-full bg-slate-800">
-          <div class="h-3 rounded-full bg-cyan-400 transition-all" :style="{ width: `${progress}%` }" />
+          <div
+            class="h-3 rounded-full bg-cyan-400 transition-all"
+            :style="{ width: `${progress}%` }"
+          />
         </div>
       </div>
 
       <div class="mt-6">
-        <TipCard :title="'Important'"
-          :description="['If your banking details, identity documents or workplace credentials were exposed, contact the relevant organisation immediately.']"
-          :icon="TriangleAlert" />
+        <TipCard
+          :title="'Important'"
+          :description="[
+            'If your banking details, identity documents or workplace credentials were exposed, contact the relevant organisation immediately.',
+          ]"
+          :icon="TriangleAlert"
+        />
       </div>
     </section>
   </main>
@@ -68,8 +80,7 @@ type ChecklistItem = {
 const checklist = ref<ChecklistItem[]>([
   {
     title: 'Change your password',
-    description:
-      'Create a new strong password that is unique to this account.',
+    description: 'Create a new strong password that is unique to this account.',
     completed: false,
   },
   {
@@ -86,8 +97,7 @@ const checklist = ref<ChecklistItem[]>([
   },
   {
     title: 'Log out other devices',
-    description:
-      'Sign out all active sessions to remove unauthorised access.',
+    description: 'Sign out all active sessions to remove unauthorised access.',
     completed: false,
   },
   {
@@ -109,7 +119,7 @@ const completedSteps = computed(() => {
   return checklist.value.filter((item) => item.completed).length
 })
 
-//calculate progress bar value for UI 
+//calculate progress bar value for UI
 const progress = computed(() => {
   return (completedSteps.value / checklist.value.length) * 100
 })

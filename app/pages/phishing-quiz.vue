@@ -1,16 +1,17 @@
 <template>
   <main class="mx-auto max-w-4xl px-6 py-10 text-white">
     <section class="mb-8">
-      <h1 class="mb-3 text-4xl font-bold">
-        Phishing Email Quiz
-      </h1>
+      <h1 class="mb-3 text-4xl font-bold">Phishing Email Quiz</h1>
 
       <p class="text-slate-300">
         Read each email and decide whether it looks safe or suspicious.
       </p>
     </section>
 
-    <section class="rounded-2xl border border-slate-800 bg-slate-900 p-6" v-if="!quizFinished">
+    <section
+      class="rounded-2xl border border-slate-800 bg-slate-900 p-6"
+      v-if="!quizFinished"
+    >
       <div class="mb-4 flex items-center justify-between" v-if="!hasAnswered">
         <p class="text-sm text-slate-400">
           Question {{ currentQuestionIndex + 1 }} of {{ questions.length }}
@@ -22,7 +23,10 @@
       </div>
 
       <!-- Format questions like an email -->
-      <div class="rounded-xl border border-slate-700 bg-slate-950 p-5" v-if="!hasAnswered">
+      <div
+        class="rounded-xl border border-slate-700 bg-slate-950 p-5"
+        v-if="!hasAnswered"
+      >
         <p class="mb-2 text-sm text-slate-400">
           From: {{ currentQuestion?.from }}
         </p>
@@ -35,22 +39,33 @@
           {{ currentQuestion?.body }}
         </p>
       </div>
-      
+
       <!-- User choices -->
       <div v-if="!hasAnswered" class="mt-6 flex gap-3">
-        <button @click="answerQuestion('safe')"
-          class="rounded-xl bg-emerald-500 px-5 py-3 font-medium text-white transition hover:bg-emerald-400">
+        <button
+          @click="answerQuestion('safe')"
+          class="rounded-xl bg-emerald-500 px-5 py-3 font-medium text-white transition hover:bg-emerald-400"
+        >
           Looks safe
         </button>
 
-        <button @click="answerQuestion('phishing')"
-          class="rounded-xl bg-red-500 px-5 py-3 font-medium text-white transition hover:bg-red-400">
+        <button
+          @click="answerQuestion('phishing')"
+          class="rounded-xl bg-red-500 px-5 py-3 font-medium text-white transition hover:bg-red-400"
+        >
           Looks suspicious
         </button>
       </div>
 
-      <div v-else class="mt-6 rounded-xl border p-5"
-        :class="isCorrect ? 'border-emerald-500 bg-emerald-950/40' : 'border-red-500 bg-red-950/40'">
+      <div
+        v-else
+        class="mt-6 rounded-xl border p-5"
+        :class="
+          isCorrect
+            ? 'border-emerald-500 bg-emerald-950/40'
+            : 'border-red-500 bg-red-950/40'
+        "
+      >
         <p class="mb-2 text-lg font-semibold">
           {{ isCorrect ? 'Correct' : 'Not quite' }}
         </p>
@@ -60,9 +75,7 @@
         </p>
 
         <div>
-          <p class="mb-2 text-sm font-medium text-slate-200">
-            Red flags:
-          </p>
+          <p class="mb-2 text-sm font-medium text-slate-200">Red flags:</p>
 
           <ul class="list-inside list-disc space-y-1 text-sm text-slate-300">
             <li v-for="flag in currentQuestion?.redFlags" :key="flag">
@@ -72,25 +85,30 @@
         </div>
 
         <!-- This button moves user to the next question -->
-        <button @click="nextQuestion"
-          class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400">
+        <button
+          @click="nextQuestion"
+          class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400"
+        >
           {{ isLastQuestion ? 'Finish quiz' : 'Next question' }}
         </button>
       </div>
     </section>
 
-    <section v-if="quizFinished" class="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6">
-      <h2 class="mb-2 text-2xl font-bold">
-        Quiz complete
-      </h2>
+    <section
+      v-if="quizFinished"
+      class="mt-6 rounded-2xl border border-slate-800 bg-slate-900 p-6"
+    >
+      <h2 class="mb-2 text-2xl font-bold">Quiz complete</h2>
 
       <p class="text-slate-300">
         You scored {{ score }} out of {{ questions.length }}.
       </p>
 
       <!-- Button for resetting quiz -->
-      <button @click="restartQuiz"
-        class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400">
+      <button
+        @click="restartQuiz"
+        class="mt-5 rounded-xl bg-cyan-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-cyan-400"
+      >
         Try again
       </button>
     </section>
@@ -105,8 +123,8 @@ useHead({
 type Answer = 'safe' | 'phishing'
 
 //from, subject and body simulate a sample email question
-//correctAnswer determines if email is phishing or not 
-//explanation and redFlags explain to user why email is phishing or not 
+//correctAnswer determines if email is phishing or not
+//explanation and redFlags explain to user why email is phishing or not
 type Question = {
   from: string
   subject: string
@@ -143,7 +161,8 @@ Susan`,
   },
   {
     from: 'admin@paypayx.com',
-    subject: 'Update Your Account Information! Your PayPal ID has been locked for security reasons',
+    subject:
+      'Update Your Account Information! Your PayPal ID has been locked for security reasons',
     body: `Dear Client, 
 
 Your PayPal Account has been locked for security reasons.
@@ -163,7 +182,7 @@ PayPal Support`,
       'Suspicious sender domain',
       'Poor grammar',
       'Threat of permanent account lock',
-      'External link pretending to be an internal page'
+      'External link pretending to be an internal page',
     ],
   },
   {
@@ -232,7 +251,7 @@ RECEIVE 50 GB: https://lcloud.com/free50/AbDx9357`,
       'Urgent language',
       'Suspicious sender domain',
       'Bad punctuation',
-      'Tries to reward urgency with a "loyalty program"', 
+      'Tries to reward urgency with a "loyalty program"',
       'Threat of permanent deletion',
     ],
   },
@@ -330,18 +349,18 @@ Payroll Team`,
   },
 ]
 
-//shuffle questions 
+//shuffle questions
 const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5)
 questions = shuffledQuestions
 
 const currentQuestionIndex = ref(0) // get current question number
-const selectedAnswer = ref<Answer | null>(null) // gets user's answer 
-const score = ref(0) // get user's score 
+const selectedAnswer = ref<Answer | null>(null) // gets user's answer
+const score = ref(0) // get user's score
 const quizFinished = ref(false) //check if quiz is finished
 
 const currentQuestion = computed(() => questions[currentQuestionIndex.value]) //get current question
 
-const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered 
+const hasAnswered = computed(() => selectedAnswer.value !== null) //check if user has answered
 
 //compares user's answers to correct answer of current question
 const isCorrect = computed(() => {
@@ -353,7 +372,7 @@ const isLastQuestion = computed(() => {
   return currentQuestionIndex.value === questions.length - 1
 })
 
-//record user's answer and add 1 to user's score if user got it right 
+//record user's answer and add 1 to user's score if user got it right
 function answerQuestion(answer: Answer) {
   selectedAnswer.value = answer
 
@@ -362,8 +381,8 @@ function answerQuestion(answer: Answer) {
   }
 }
 
-//increment quiz question index by 1 unless quiz is at last question 
-//after moving to next question, reset user's selected answer to null 
+//increment quiz question index by 1 unless quiz is at last question
+//after moving to next question, reset user's selected answer to null
 function nextQuestion() {
   if (isLastQuestion.value) {
     quizFinished.value = true
@@ -374,7 +393,7 @@ function nextQuestion() {
   selectedAnswer.value = null
 }
 
-//reset all values and allow user to take the quiz again 
+//reset all values and allow user to take the quiz again
 function restartQuiz() {
   currentQuestionIndex.value = 0
   selectedAnswer.value = null

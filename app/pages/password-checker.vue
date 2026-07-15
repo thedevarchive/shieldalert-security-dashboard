@@ -6,13 +6,14 @@ useHead({
   title: 'Password Strength Checker',
 })
 
-const password = ref('') //state for password input 
+const password = ref('') //state for password input
 const showPassword = ref(false) //determines if inputted password is shown or hidden
-const obviousPattern = /(p[a4@]ssw[o0]rd|asdf|abc|qwerty|test|testing|welcome|123|1234|1111|0000)/i
+const obviousPattern =
+  /(p[a4@]ssw[o0]rd|asdf|abc|qwerty|test|testing|welcome|123|1234|1111|0000)/i
 const hasObviousPattern = computed(() => obviousPattern.test(password.value))
 
 // label has the password requirements user should ideally follow
-// passed contains the boolean condition/regex that checks if user's password is following the requirement 
+// passed contains the boolean condition/regex that checks if user's password is following the requirement
 const checks = computed(() => [
   {
     label: 'At least 12 characters long',
@@ -40,12 +41,12 @@ const checks = computed(() => [
   },
 ])
 
-//get the number of passed conditions fulfilled by password 
+//get the number of passed conditions fulfilled by password
 const passedChecks = computed(() => {
   return checks.value.filter((check) => check.passed).length
 })
 
-//calculate progress bar value 
+//calculate progress bar value
 const score = computed(() => {
   if (!password.value) return 0
 
@@ -57,7 +58,7 @@ const score = computed(() => {
   return baseScore
 })
 
-//display strength of password based on the progress bar value 
+//display strength of password based on the progress bar value
 const strengthLabel = computed(() => {
   if (score.value === 0) return 'Not tested'
   if (score.value < 35) return 'Weak'
@@ -87,7 +88,7 @@ const characterSetSize = computed(() => {
   if (/[a-z]/.test(password.value)) size += 26 //check for lowercase
   if (/[A-Z]/.test(password.value)) size += 26 //check for uppercase
   if (/\d/.test(password.value)) size += 10 //check for numbers
-  if (/[^A-Za-z0-9]/.test(password.value)) size += 32 //check for special characters 
+  if (/[^A-Za-z0-9]/.test(password.value)) size += 32 //check for special characters
 
   return size
 })
@@ -125,9 +126,7 @@ const crackTimeLabel = computed(() => {
 <template>
   <main class="mx-auto max-w-4xl px-6 py-10 text-white">
     <section class="mb-8">
-      <h1 class="mb-3 text-4xl font-bold">
-        Password Strength Checker
-      </h1>
+      <h1 class="mb-3 text-4xl font-bold">Password Strength Checker</h1>
 
       <p class="text-slate-300">
         Test how strong a password is based on length, variety and guessability.
@@ -135,17 +134,27 @@ const crackTimeLabel = computed(() => {
     </section>
 
     <section class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-      <label for="password" class="mb-2 block text-sm font-medium text-slate-300">
+      <label
+        for="password"
+        class="mb-2 block text-sm font-medium text-slate-300"
+      >
         Enter a password
       </label>
 
       <div class="relative">
-        <input id="password" v-model="password" :type="showPassword ? 'text' : 'password'"
+        <input
+          id="password"
+          v-model="password"
+          :type="showPassword ? 'text' : 'password'"
           placeholder="Type a password..."
-          class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 pr-12 text-white outline-none focus:border-cyan-400" />
+          class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 pr-12 text-white outline-none focus:border-cyan-400"
+        />
 
-        <button type="button" @click="showPassword = !showPassword"
-          class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 transition hover:text-white">
+        <button
+          type="button"
+          @click="showPassword = !showPassword"
+          class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 transition hover:text-white"
+        >
           <Eye v-if="!showPassword" class="h-5 w-5" />
           <EyeOff v-else class="h-5 w-5" />
         </button>
@@ -160,14 +169,28 @@ const crackTimeLabel = computed(() => {
         </div>
 
         <div class="h-3 rounded-full bg-slate-800">
-          <div class="h-3 rounded-full transition-all" :class="strengthBarClass" :style="{ width: `${score}%` }" />
+          <div
+            class="h-3 rounded-full transition-all"
+            :class="strengthBarClass"
+            :style="{ width: `${score}%` }"
+          />
         </div>
       </div>
 
       <ul class="mt-6 space-y-3">
-        <li v-for="check in checks" :key="check.label" class="flex items-center gap-3 text-sm">
-          <span class="flex h-5 w-5 items-center justify-center rounded-full text-xs"
-            :class="check.passed ? 'bg-emerald-500 text-white' : 'bg-slate-700 text-slate-300'">
+        <li
+          v-for="check in checks"
+          :key="check.label"
+          class="flex items-center gap-3 text-sm"
+        >
+          <span
+            class="flex h-5 w-5 items-center justify-center rounded-full text-xs"
+            :class="
+              check.passed
+                ? 'bg-emerald-500 text-white'
+                : 'bg-slate-700 text-slate-300'
+            "
+          >
             {{ check.passed ? '✓' : '×' }}
           </span>
 
@@ -178,24 +201,25 @@ const crackTimeLabel = computed(() => {
       </ul>
 
       <div class="mt-6 rounded-xl border border-slate-800 bg-slate-950 p-4">
-        <p class="text-sm text-slate-400">
-          Estimated brute-force crack time
-        </p>
+        <p class="text-sm text-slate-400">Estimated brute-force crack time</p>
 
         <p class="mt-2 text-2xl font-bold text-cyan-400">
           {{ crackTimeLabel }}
         </p>
 
         <p class="mt-2 text-sm text-slate-400">
-          Estimate assumes 1 billion guesses per second and no password leaks, reuse,
-          phishing or personal information clues.
+          Estimate assumes 1 billion guesses per second and no password leaks,
+          reuse, phishing or personal information clues.
         </p>
       </div>
 
       <div class="mt-6">
         <TipCard
-          :description="['Avoid using names, birthdays, pets, favourite teams or anything someone could guess from your social media.']"
-          :is-dark="true" />
+          :description="[
+            'Avoid using names, birthdays, pets, favourite teams or anything someone could guess from your social media.',
+          ]"
+          :is-dark="true"
+        />
       </div>
     </section>
   </main>
