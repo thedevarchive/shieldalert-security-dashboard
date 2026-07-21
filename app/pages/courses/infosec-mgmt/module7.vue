@@ -47,10 +47,7 @@ const sections = [
   <main class="min-h-screen bg-slate-950 text-white">
     <section class="mx-auto flex max-w-7xl gap-8 px-6 py-10">
       <article class="max-w-3xl flex-1">
-        <NuxtLink
-          to="/courses"
-          class="mb-6 inline-block text-sm text-cyan-400 hover:text-cyan-300"
-        >
+        <NuxtLink to="/courses" class="mb-6 inline-block text-sm text-cyan-400 hover:text-cyan-300">
           ← Back to courses
         </NuxtLink>
 
@@ -186,7 +183,7 @@ const sections = [
           </h2>
 
           <p class="mb-4 text-slate-300">
-            Object-based authenticators use physical tokens to authenticate users. 
+            Object-based authenticators use physical tokens to authenticate users.
           </p>
 
           <p class="mb-4 text-slate-300">Examples:</p>
@@ -206,9 +203,21 @@ const sections = [
         </section>
 
         <section id="7" class="scroll-mt-24 border-b border-slate-800 py-10">
-          <h2 class="mb-4 text-2xl font-semibold"></h2>
+          <h2 class="mb-4 text-2xl font-semibold">Tokens</h2>
 
-          <p class="mb-4 text-slate-300"></p>
+          <p class="mb-4 text-slate-300">A token could be</p>
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>A physical key</li>
+            <li>A swipe card</li>
+            <li>An ID badge</li>
+            <li>A device that generates sequences of one-time passwords</li>
+          </ul>
+
+          <p class="mb-4 text-slate-300">
+            One limitation is that it requires synchronisation. Thus, it requires a window of time that also considers
+            network delays. If it is too short, it may lock out users. If it is too long, attackers could be able to
+            capture the token and be able to log in.
+          </p>
         </section>
 
         <section id="8" class="scroll-mt-24 border-b border-slate-800 py-10">
@@ -223,44 +232,32 @@ const sections = [
           <div class="space-y-3">
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
               Rhodes, A. (2023).
-              <em
-                >IFN541 Information Security Management: Identity
-                Management.</em
-              >
+              <em>IFN541 Information Security Management: Identity
+                Management.</em>
               [Presentation].
-              <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/"
-                >Canvas.</a
-              >
+              <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a>
             </div>
 
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
               Rhodes, A. (2023).
-              <em
-                >IFN541 Information Security Management: Other User
-                Authentication Mechanisms</em
-              >
+              <em>IFN541 Information Security Management: Other User
+                Authentication Mechanisms</em>
               [Presentation].
-              <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/"
-                >Canvas.</a
-              >
+              <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a>
             </div>
           </div>
         </section>
 
         <div class="mt-10 flex justify-between border-t border-slate-800 pt-6">
-          <NuxtLink
-            to="/courses/infosec-mgmt/module5"
-            class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800"
-          >
+          <NuxtLink to="/courses/infosec-mgmt/module5"
+            class="rounded-xl border border-slate-700 px-5 py-3 text-sm text-slate-300 hover:bg-slate-800">
             Previous
           </NuxtLink>
 
           <SelectInfoSec />
 
-          <NuxtLink
-            to="/courses/infosec-mgmt/module6"
-            class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400"
-          >
+          <NuxtLink to="/courses/infosec-mgmt/module6"
+            class="rounded-xl bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-400">
             Next
           </NuxtLink>
         </div>
