@@ -181,9 +181,28 @@ const sections = [
         </section>
 
         <section id="6" class="scroll-mt-24 border-b border-slate-800 py-10">
-          <h2 class="mb-4 text-2xl font-semibold"></h2>
+          <h2 class="mb-4 text-2xl font-semibold">
+            Object-based authenticators
+          </h2>
 
-          <p class="mb-4 text-slate-300"></p>
+          <p class="mb-4 text-slate-300">
+            Object-based authenticators use physical tokens to authenticate users. 
+          </p>
+
+          <p class="mb-4 text-slate-300">Examples:</p>
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Physical door key</li>
+            <li>Magnetic swipe card</li>
+            <li>Token used for generating access codes</li>
+          </ul>
+
+          <p class="mb-4 text-slate-300">Advantages</p>
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Hard to share</li>
+            <li>User can easily recognise if token was lost</li>
+          </ul>
+
+          <p class="mb-4 text-slate-300">Disadvantage: If lost, the person who finds it can use the token.</p>
         </section>
 
         <section id="7" class="scroll-mt-24 border-b border-slate-800 py-10">
