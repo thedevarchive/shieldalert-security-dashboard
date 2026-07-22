@@ -65,7 +65,9 @@ Certain modules will feature assessments to test your knowledge on the course. S
 
 ## Upcoming Features
 
-* None at the moment, I'm just finishing up on the Information Security course.
+* In Progress: completing on the Information Security course
+* Final assessment for Information Security course
+* Chatbot assistant for website navigation
 
 # How to Report Issues
 
