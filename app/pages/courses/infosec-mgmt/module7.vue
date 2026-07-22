@@ -26,18 +26,38 @@ const sections = [
   },
   {
     id: '5',
-    title: '',
+    title: 'Passwords',
   },
   {
     id: '6',
-    title: '',
+    title: 'Object-based authenticators',
   },
   {
     id: '7',
-    title: '',
+    title: 'Tokens',
+  },
+  {
+    id: '8',
+    title: 'ID-based authenticators',
   },
   {
     id: '9',
+    title: 'Biometrics issues',
+  },
+  {
+    id: '10',
+    title: '',
+  },
+  {
+    id: '11',
+    title: '',
+  },
+  {
+    id: '12',
+    title: '',
+  },
+  {
+    id: '15',
     title: 'Sources',
   },
 ]
@@ -221,12 +241,42 @@ const sections = [
         </section>
 
         <section id="8" class="scroll-mt-24 border-b border-slate-800 py-10">
-          <h2 class="mb-4 text-2xl font-semibold"></h2>
+          <h2 class="mb-4 text-2xl font-semibold">
+            ID-based authenticators
+          </h2>
 
-          <p class="mb-4 text-slate-300"></p>
+          <p class="mb-4 text-slate-300">
+            ID-based authenticators refer to authenticators involving something that is unique to a person.
+            These include biometrics like fingerprints, eye scans or even signatures.
+            The characteristics of a biometric are that each person must have one (universality),
+            no two people share the same biometric pattern (distinctiveness),
+            it cannot change over time (permanence) and it should be measurable (collectability).
+          </p>
+
+          <p class="mb-4 text-slate-300">Advantages</p>
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Cannot be forgotten or lost</li>
+            <li>Difficult to copy or replicate</li>
+          </ul>
+
+          <p class="mb-4 text-slate-300">Disadvantage: It is harder to replace than passwords or tokens.</p>
         </section>
 
-        <section id="9" class="scroll-mt-24 py-10">
+        <section id="9" class="scroll-mt-24 border-b border-slate-800 py-10">
+          <h2 class="mb-4 text-2xl font-semibold">
+            Biometrics issues
+          </h2>
+
+          <p class="mb-4 text-slate-300">
+            Sometimes, two samples of a biometric taken from the same person would not be registered as the same because
+            of imperfect imaging conditions, changes in the user's characteristics, ambient conditions or even user's
+            interaction with the sensor. The captured features are also compared against the stored template and a
+            difference in those samples may result in a decision error which could either reject the authorised user or
+            allow an unauthorised user access.
+          </p>
+        </section>
+
+        <section id="15" class="scroll-mt-24 py-10">
           <h2 class="mb-4 text-2xl font-semibold">Sources</h2>
 
           <div class="space-y-3">
@@ -241,7 +291,7 @@ const sections = [
             <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
               Rhodes, A. (2023).
               <em>IFN541 Information Security Management: Other User
-                Authentication Mechanisms</em>
+                Authentication Mechanisms.</em>
               [Presentation].
               <a class="text-cyan-400" href="https://www.canvas.qut.edu.au/">Canvas.</a>
             </div>
