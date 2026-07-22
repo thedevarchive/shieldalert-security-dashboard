@@ -54,10 +54,6 @@ const sections = [
   },
   {
     id: '12',
-    title: '',
-  },
-  {
-    id: '15',
     title: 'Sources',
   },
 ]
@@ -276,7 +272,41 @@ const sections = [
           </p>
         </section>
 
-        <section id="15" class="scroll-mt-24 py-10">
+        <section id="10" class="scroll-mt-24 border-b border-slate-800 py-10">
+          <h2 class="mb-4 text-2xl font-semibold">
+            Location-based authentication
+          </h2>
+
+          <p class="mb-4 text-slate-300">
+            Location-based authentication authenticates the user based on where they are located at the current time.
+            They could use tracking technologies like GPS, IP addresses or DNS names to verify the user.
+          </p>
+
+          <p class="mb-4 text-slate-300">Advantages</p>
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Improves network security, especially when locations are local</li>
+          </ul>
+
+          <p class="mb-4 text-slate-300">Disadvantages</p>
+          <ul class="mb-4 list-disc space-y-3 pl-6 text-slate-300">
+            <li>Privacy issues</li>
+            <li>IPs can be changed using VPNs</li>
+          </ul>
+        </section>
+
+        <section id="11" class="scroll-mt-24 border-b border-slate-800 py-10">
+          <h2 class="mb-4 text-2xl font-semibold">
+            Multi-factor authentication
+          </h2>
+
+          <p class="mb-4 text-slate-300">
+            Combining multiple authentication techniques can not only cover the weaknesses of the chosen methods, but
+            also prevent attackers from gaining unauthorised access to information. Some frequently-used combinations
+            are password and verification code or PIN and swipe card. 
+          </p>
+        </section>
+
+        <section id="12" class="scroll-mt-24 py-10">
           <h2 class="mb-4 text-2xl font-semibold">Sources</h2>
 
           <div class="space-y-3">
