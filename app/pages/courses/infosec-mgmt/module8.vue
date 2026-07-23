@@ -10,7 +10,7 @@ const sections = [
   },
   {
     id: '1',
-    title: '',
+    title: 'Cryptographic terminology',
   },
   {
     id: '2',
@@ -74,7 +74,7 @@ const sections = [
         <h1 class="mb-4 text-4xl font-bold">Cryptography</h1>
 
         <p class="mb-8 text-slate-300">
-          Learn about cryptography and how it is used to protect digital information. 
+          Learn about cryptography and how it is used to protect digital information.
         </p>
 
         <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
@@ -84,15 +84,18 @@ const sections = [
 
         <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
           <h2 class="mb-4 text-2xl font-semibold">
-            What is cryptography? 
+            What is cryptography?
           </h2>
 
           <p class="mb-4 text-slate-300">
+            Cryptography is the study of ways to keep a body of writing a secret. It is also the study of how a secret
+            writing can be uncovered. It uses an algorithm, or a set of instructions, and some secret knowledge to produce the secret writing.
           </p>
         </section>
 
         <section id="1" class="scroll-mt-24 border-b border-slate-800 py-10">
           <h2 class="mb-4 text-2xl font-semibold">
+            Cryptographic terminology
           </h2>
 
           <p class="mb-4 text-slate-300">
