@@ -46,11 +46,11 @@ const sections = [
   },
   {
     id: '10',
-    title: '',
+    title: 'Location-based authentication',
   },
   {
     id: '11',
-    title: '',
+    title: 'Multi-factor authentication',
   },
   {
     id: '12',
