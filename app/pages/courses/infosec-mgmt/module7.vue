@@ -80,7 +80,7 @@ const sections = [
 
         <div class="mb-10 rounded-2xl border border-slate-800 bg-slate-900 p-5">
           <p class="text-sm text-slate-400">Estimated reading time</p>
-          <p class="mt-1 text-lg font-semibold">12 minutes</p>
+          <p class="mt-1 text-lg font-semibold">20 minutes</p>
         </div>
 
         <section id="0" class="scroll-mt-24 border-b border-slate-800 pb-10">
